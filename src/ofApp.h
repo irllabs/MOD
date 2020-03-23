@@ -101,7 +101,11 @@ class ofApp : public ofBaseApp, public ofxMidiListener {
         ofPixels nowPixels;
     
         int counter;
-    
+
+        // for GStreamer video capture
+        ofGstVideoUtils gst;
+        ofTexture gsttex;
+
     
         // for MIDI
         void newMidiMessage(ofxMidiMessage& eventArgs);

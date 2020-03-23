@@ -188,21 +188,26 @@ void ofApp::setup(){
 
     ofLog(OF_LOG_NOTICE,"--------setting up camera--------");
     
-    vector<ofVideoDevice> devices = videoGrabber.listDevices();
-    
-    for(unsigned int i = 0; i < devices.size(); i++){
-        if(devices[i].bAvailable){
-            ofLogNotice() << devices[i].id << ": " << devices[i].deviceName;
-        }else{
-            ofLogNotice() << devices[i].id << ": " << devices[i].deviceName << " - unavailable ";
-        }
-    }
-    
-    videoGrabber.setDeviceID(CAM_DEV_ID);
-    videoGrabber.setDesiredFrameRate(CAM_FPS);
-    videoGrabber.initGrabber(CAM_W, CAM_H);
+    gst.setPipeline("v4l2src device=/dev/video0 ! image/jpeg,framerate=30/1,width=1920,height=1080 ! jpegparse ! jpegdec ! video/x-raw ! videoconvert ! video/x-raw,width=1920,height=1080,format=BGRx,framerate=30/1 ! videoconvert  ! videorate" , OF_PIXELS_RGB, true, CAM_W,CAM_H);
+    gst.startPipeline();
+    gst.play();
+    gsttex.allocate(CAM_W,CAM_H,GL_RGB);
 
-    ofSetVerticalSync(true);
+    // vector<ofVideoDevice> devices = videoGrabber.listDevices();
+    
+    // for(unsigned int i = 0; i < devices.size(); i++){
+    //     if(devices[i].bAvailable){
+    //         ofLogNotice() << devices[i].id << ": " << devices[i].deviceName;
+    //     }else{
+    //         ofLogNotice() << devices[i].id << ": " << devices[i].deviceName << " - unavailable ";
+    //     }
+    // }
+    
+    // videoGrabber.setDeviceID(CAM_DEV_ID);
+    // videoGrabber.setDesiredFrameRate(CAM_FPS);
+    // videoGrabber.initGrabber(CAM_W, CAM_H);
+
+    // ofSetVerticalSync(true);
     
     //-------------------------------------
     //--SETUP MIDI-------------------------
@@ -248,9 +253,14 @@ void ofApp::setup(){
 void ofApp::update(){
     ofBackground(0, 0, 0);
     // gate latest camera frame, assign it to a texture
-    videoGrabber.update();
-    if(videoGrabber.isFrameNew()){
-        nowTexture = videoGrabber.getTexture();
+    // videoGrabber.update();
+    gst.update();
+
+    // if(videoGrabber.isFrameNew()){
+    //     nowTexture = videoGrabber.getTexture();
+    // }
+    if(gst.isFrameNew()){
+           nowTexture.loadData(gst.getPixels(), GL_RGB);
     }
 
     // update video layers
@@ -279,11 +289,14 @@ void ofApp::draw(){
         camShader.setUniform1f("softness", camSoftness);
         camShader.setUniform1f("invert", camInvert);
         camShader.setUniform1f("opacity", camOpacity);
-        videoGrabber.draw(0,0,CAM_W * VID_SCALE,CAM_H * VID_SCALE);
+        //videoGrabber.draw(0,0,CAM_W * VID_SCALE,CAM_H * VID_SCALE);
+        nowTexture.draw(0,0,CAM_W * VID_SCALE,CAM_H * VID_SCALE);
+
         camShader.end();
     } else {
         //ofLog(OF_LOG_NOTICE, "---------drawing up with NO Shader");
-        videoGrabber.draw(0,0,CAM_W * VID_SCALE,CAM_H * VID_SCALE);
+        //videoGrabber.draw(0,0,CAM_W * VID_SCALE,CAM_H * VID_SCALE);
+        nowTexture.draw(0,0,CAM_W * VID_SCALE,CAM_H * VID_SCALE);
     }
 
     
