@@ -20,7 +20,7 @@ int main( ){
     //     settings.setGLVersion(3,2);
     
     // #endif
-    ofSetupOpenGL(1280,720, OF_WINDOW);	
+    ofSetupOpenGL(1920,1080, OF_FULLSCREEN);	
 
 	// this kicks off the running of my app
 	// can be OF_WINDOW or OF_FULLSCREEN
