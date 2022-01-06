@@ -1,5 +1,5 @@
 # livedraw-mini
-openFrameworks based live video looper made for the Raspberry Pi 3, with a Pi Camera v2
+openFrameworks based live video looper made for the Raspberry Pi 3, with a Pi Camera v2, or NVidia Jetson with a USB webcap.
 
 # code
 - `ConsoleListener.h` - used for debugging in console on the Pi
