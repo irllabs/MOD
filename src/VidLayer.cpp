@@ -7,16 +7,16 @@
 //
 
 #include "ofApp.h"
-#include "vidLayer.h"
+#include "VidLayer.h"
 
 
 
-void vidLayer::setup(int thisID, int bufSize){
+void VidLayer::setup(int thisID, int bufSize){
     //array of textures
     //vidFrames.resize(bufSize);
     
     //array of FBOs
-    vidFrames2.resize(bufSize);
+    vidFrames.resize(bufSize);
     
     myID = thisID;
     state = 0;                //stop all playheads
@@ -37,10 +37,15 @@ void vidLayer::setup(int thisID, int bufSize){
     x = WINDOW_W/2;
     y = WINDOW_H/2;
     
+    fboSettings.internalformat = GL_R8;
+    fboSettings.width = CAM_W;
+    fboSettings.height = CAM_H;
+
     //does this allocate the FBO?
     for (int k = 0;k<bufSize;k++){
-        vidFrames2[k].allocate(CAM_W, CAM_H);
-        vidFrames2[k].setAnchorPercent(0.5, 0.5);
+        // vidFrames[k].allocate(CAM_W, CAM_H);
+        vidFrames[k].allocate(fboSettings);
+        vidFrames[k].setAnchorPercent(0.5, 0.5);
     }
 
     
@@ -61,7 +66,7 @@ void vidLayer::setup(int thisID, int bufSize){
 
 }
 
-void vidLayer::draw(ofTexture thisTexture){
+void VidLayer::draw(ofTexture thisTexture){
 
     if (state==2 && recCount>0) {
         //ofLog(OF_LOG_NOTICE, "playing at " + ofToString(myID)+ " at "+ ofToString(playHead));
@@ -73,11 +78,11 @@ void vidLayer::draw(ofTexture thisTexture){
             shader.setUniform1f("softness", softness);
             shader.setUniform1f("invert", invert);
             shader.setUniform1f("opacity", opacity);
-            vidFrames2[playHead].draw(x, y , CAM_W * scale * VID_SCALE, CAM_H * scale * VID_SCALE);
+            vidFrames[playHead].draw(x, y , CAM_W * scale * VID_SCALE, CAM_H * scale * VID_SCALE);
      
             shader.end();
         } else {
-            vidFrames2[playHead].draw(x, y , CAM_W * scale * VID_SCALE, CAM_H * scale * VID_SCALE);
+            vidFrames[playHead].draw(x, y , CAM_W * scale * VID_SCALE, CAM_H * scale * VID_SCALE);
         }
 
         
@@ -108,33 +113,16 @@ void vidLayer::draw(ofTexture thisTexture){
 
 }
 
-/*
-void vidLayer::update(ofTexture thisTexture){
-    ofLog(OF_LOG_NOTICE, "Running update for layer " + ofToString(myID));
-    if (state == 1) {
-        ofLog(OF_LOG_NOTICE, "recording update " + ofToString(myID)+ " at "+ ofToString(recHead));
-        //vidFrames[recHead].allocate( thisPixels);
-        vidFrames[recHead] = thisTexture;
 
-        //advance record head
-        recHead = (recHead + 1 ) % recMax;
-        
-    } else if (state == 2) {
-        //advance playhead
-        playHead = (playHead + 1) % recCount;
-    }
-}
-*/
-
-void vidLayer::update2(ofTexture theTexture){
+void VidLayer::update(ofTexture theTexture){
     if (state == 1) {
-        //ofLog(OF_LOG_NOTICE, "recording update2 " + ofToString(myID)+ " at "+ ofToString(recHead));
+        //ofLog(OF_LOG_NOTICE, "recording update " + ofToString(myID)+ " at "+ ofToString(recHead));
         
         
         //draw texture onto FBO
-        vidFrames2[recHead].begin();
+        vidFrames[recHead].begin();
         theTexture.draw(0,0);
-        vidFrames2[recHead].end();
+        vidFrames[recHead].end();
         
         
         //advance record head
@@ -149,7 +137,7 @@ void vidLayer::update2(ofTexture theTexture){
     }
 }
 
-void vidLayer::setState(int thisState){
+void VidLayer::setState(int thisState){
     //if we're not already recording, start recording
     
     switch (thisState) {
@@ -194,37 +182,37 @@ int vidLayer::setFrame(int thisFrame, ofPixels thisPixels) {
 }
  */
 
-int vidLayer::getState() {
+int VidLayer::getState() {
     return(state);
 }
 
-void vidLayer::setSpeed(float speed){
+void VidLayer::setSpeed(float speed){
     
 }
 
-void vidLayer::setShaderParams(float thisThresh, float thisSoftness, float thisInvert){
+void VidLayer::setShaderParams(float thisThresh, float thisSoftness, float thisInvert){
     thresh = thisThresh;
     softness = thisSoftness;
     invert = thisInvert;
 }
 
-void vidLayer::setScale(float thisScale){
+void VidLayer::setScale(float thisScale){
     scale =thisScale;
 }
 
-void vidLayer::setOpacity(float thisOpacity){
+void VidLayer::setOpacity(float thisOpacity){
     opacity =thisOpacity;
 }
 
-void vidLayer::setThresh(float thisThresh){
+void VidLayer::setThresh(float thisThresh){
     thresh =thisThresh;
 }
 
-void vidLayer::setInvert(float thisInvert){
+void VidLayer::setInvert(float thisInvert){
     invert =thisInvert;
 }
 
-void vidLayer::setPos(int positionX, int positionY){
+void VidLayer::setPos(int positionX, int positionY){
 
     x = positionX ;
     y = positionY;
@@ -232,14 +220,14 @@ void vidLayer::setPos(int positionX, int positionY){
 
 }
 
-void vidLayer::setXPos(int positionX){
+void VidLayer::setXPos(int positionX){
     x = positionX ;
     //ofLog(OF_LOG_NOTICE, "---setting X position of " + ofToString(myID) + " to  " + ofToString(x));
 
 
 }
 
-void vidLayer::setYPos(int positionY){
+void VidLayer::setYPos(int positionY){
 
     y = positionY;
     //ofLog(OF_LOG_NOTICE, "---setting X position of " + ofToString(myID) + " to  " + ofToString(y));

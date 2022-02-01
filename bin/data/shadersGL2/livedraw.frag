@@ -1,3 +1,5 @@
+// precision highp float;
+
 uniform sampler2DRect tex0;
 uniform sampler2DRect maskTex;
 
@@ -10,7 +12,6 @@ varying vec2 texCoordVarying;
 
 void main()
 {
-
     // Get color value from
     vec3 src = texture2DRect(tex0, texCoordVarying).rgb;
 
@@ -21,12 +22,12 @@ void main()
     fValue = smoothstep(max(l1,0.0), min(l2, 1.0), fValue);
     fValue = float(invert) * (1.-fValue) + (1.-float(invert))*fValue;
     
-
     // Get alpha value
     float mask = texture2DRect(maskTex, texCoordVarying).a;
 
     // combine mask and threshold
-    vec4 calc=vec4(fValue*opacity,fValue*opacity,fValue*opacity,fValue*mask*opacity);
+    //vec4 calc=vec4(fValue*opacity,fValue*opacity,fValue*opacity,fValue*mask*opacity);
+    vec4 calc=vec4(src.r*opacity,src.r*opacity,src.r*opacity,mask);
 
     // Set
     gl_FragColor = calc;

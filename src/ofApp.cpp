@@ -188,26 +188,54 @@ void ofApp::setup(){
 
     ofLog(OF_LOG_NOTICE,"--------setting up camera--------");
     
+    # ifdef TARGET_LINUX_ARM
+    // When setting up a gstreamer pipeline manually:
     gst.setPipeline("v4l2src device=/dev/video0 ! image/jpeg,framerate=30/1,width=1920,height=1080 ! jpegparse ! jpegdec ! video/x-raw ! videoconvert ! video/x-raw,width=1920,height=1080,format=BGRx,framerate=30/1 ! videoconvert  ! videorate" , OF_PIXELS_RGB, true, CAM_W,CAM_H);
     gst.startPipeline();
     gst.play();
     gsttex.allocate(CAM_W,CAM_H,GL_RGB);
+    # endif
 
-    // vector<ofVideoDevice> devices = videoGrabber.listDevices();
+    # ifdef TARGET_LINUX
+    // When using the videoGrabber component
+    vector<ofVideoDevice> devices = videoGrabber.listDevices();
     
-    // for(unsigned int i = 0; i < devices.size(); i++){
-    //     if(devices[i].bAvailable){
-    //         ofLogNotice() << devices[i].id << ": " << devices[i].deviceName;
-    //     }else{
-    //         ofLogNotice() << devices[i].id << ": " << devices[i].deviceName << " - unavailable ";
-    //     }
-    // }
-    
-    // videoGrabber.setDeviceID(CAM_DEV_ID);
-    // videoGrabber.setDesiredFrameRate(CAM_FPS);
-    // videoGrabber.initGrabber(CAM_W, CAM_H);
+    for(unsigned int i = 0; i < devices.size(); i++){
+        if(devices[i].bAvailable){
+            ofLogNotice() << devices[i].id << ": " << devices[i].deviceName;
+        }else{
+            ofLogNotice() << devices[i].id << ": " << devices[i].deviceName << " - unavailable ";
+        }
+    }
+    videoGrabber.setDeviceID(CAM_DEV_ID);
+    videoGrabber.setDesiredFrameRate(CAM_FPS);
+    videoGrabber.initGrabber(CAM_W, CAM_H);
+    ofSetVerticalSync(true);    
+    # endif
 
-    // ofSetVerticalSync(true);
+    #ifdef TARGET_OSX
+    // When using the videoGrabber component
+    vector<ofVideoDevice> devices = videoGrabber.listDevices();
+    
+    for(unsigned int i = 0; i < devices.size(); i++){
+        if(devices[i].bAvailable){
+            ofLogNotice() << devices[i].id << ": " << devices[i].deviceName;
+        }else{
+            ofLogNotice() << devices[i].id << ": " << devices[i].deviceName << " - unavailable ";
+        }
+    }
+    videoGrabber.setDeviceID(CAM_DEV_ID);
+    videoGrabber.setDesiredFrameRate(CAM_FPS);
+    videoGrabber.initGrabber(CAM_W, CAM_H);
+    ofSetVerticalSync(true); 
+    #endif      
+
+
+
+
+    
+
+ 
     
     //-------------------------------------
     //--SETUP MIDI-------------------------
@@ -253,15 +281,17 @@ void ofApp::setup(){
 void ofApp::update(){
     ofBackground(0, 0, 0);
     // gate latest camera frame, assign it to a texture
-    // videoGrabber.update();
-    gst.update();
-
-    // if(videoGrabber.isFrameNew()){
-    //     nowTexture = videoGrabber.getTexture();
+    
+    //gst.update();
+    //     if(gst.isFrameNew()){
+    //        nowTexture.loadData(gst.getPixels(), GL_RGB);
     // }
-    if(gst.isFrameNew()){
-           nowTexture.loadData(gst.getPixels(), GL_RGB);
+    
+    videoGrabber.update();  
+    if(videoGrabber.isFrameNew()){
+        nowTexture = videoGrabber.getTexture();
     }
+
 
     // update video layers
     for (int k=0;k<LAYER_COUNT;k++){
@@ -271,7 +301,7 @@ void ofApp::update(){
         //vidLayers[k].update(nowPixels);
     
         //second method: use FBOs
-        vidLayers[k].update2(nowTexture);
+        vidLayers[k].update(nowTexture);
         }
 }
 

@@ -1,6 +1,6 @@
 obj/linux64/Release/src/vidLayer.o: \
- /home/ali/Documents/of_v0.11.0_linux64gcc6_release/apps/myApps/MOD/src/vidLayer.cpp \
- /home/ali/Documents/of_v0.11.0_linux64gcc6_release/apps/myApps/MOD/src/ofApp.h \
+ /home/ali/Documents/Dev/of_v0.11.2_linux64gcc6_release/apps/myApps/MOD/src/vidLayer.cpp \
+ /home/ali/Documents/Dev/of_v0.11.2_linux64gcc6_release/apps/myApps/MOD/src/ofApp.h \
  ../../../libs/openFrameworks/ofMain.h \
  ../../../libs/openFrameworks/utils/ofConstants.h \
  ../../../libs/tess2/include/tesselator.h \
@@ -174,104 +174,53 @@ obj/linux64/Release/src/vidLayer.o: \
  ../../../libs/glm/include/glm/trigonometric.hpp \
  ../../../libs/glm/include/glm/detail/setup.hpp \
  ../../../libs/glm/include/glm/detail/func_trigonometric.inl \
- ../../../libs/glm/include/glm/ext.hpp \
- ../../../libs/glm/include/glm/glm.hpp \
- ../../../libs/glm/include/glm/packing.hpp \
- ../../../libs/glm/include/glm/detail/func_packing.inl \
- ../../../libs/glm/include/glm/detail/type_half.hpp \
- ../../../libs/glm/include/glm/detail/type_half.inl \
- ../../../libs/glm/include/glm/integer.hpp \
- ../../../libs/glm/include/glm/detail/func_integer.inl \
- ../../../libs/glm/include/glm/./ext/matrix_relational.hpp \
- ../../../libs/glm/include/glm/./ext/matrix_relational.inl \
- ../../../libs/glm/include/glm/./ext/../ext/vector_relational.hpp \
- ../../../libs/glm/include/glm/./ext/../ext/vector_relational.inl \
- ../../../libs/glm/include/glm/./ext/../ext/../detail/type_float.hpp \
- ../../../libs/glm/include/glm/./ext/../ext/../detail/setup.hpp \
- ../../../libs/glm/include/glm/./ext/quaternion_double.hpp \
- ../../../libs/glm/include/glm/./ext/../detail/type_quat.hpp \
- ../../../libs/glm/include/glm/./ext/../detail/../ext/quaternion_relational.hpp \
- ../../../libs/glm/include/glm/./ext/../detail/../ext/quaternion_relational.inl \
- ../../../libs/glm/include/glm/./ext/../detail/../gtc/matrix_transform.hpp \
- ../../../libs/glm/include/glm/./ext/../detail/../gtc/../ext/matrix_projection.hpp \
- ../../../libs/glm/include/glm/./ext/../detail/../gtc/../ext/matrix_projection.inl \
- ../../../libs/glm/include/glm/./ext/../detail/../gtc/../ext/matrix_clip_space.hpp \
- ../../../libs/glm/include/glm/./ext/../detail/../gtc/../ext/matrix_clip_space.inl \
- ../../../libs/glm/include/glm/./ext/../detail/../gtc/../ext/matrix_transform.hpp \
- ../../../libs/glm/include/glm/./ext/../detail/../gtc/../ext/matrix_transform.inl \
- ../../../libs/glm/include/glm/./ext/../detail/../gtc/matrix_transform.inl \
- ../../../libs/glm/include/glm/./ext/../detail/type_quat.inl \
- ../../../libs/glm/include/glm/./ext/../detail/../ext/quaternion_geometric.hpp \
- ../../../libs/glm/include/glm/./ext/../detail/../ext/quaternion_geometric.inl \
- ../../../libs/glm/include/glm/./ext/quaternion_double_precision.hpp \
- ../../../libs/glm/include/glm/./ext/quaternion_float.hpp \
- ../../../libs/glm/include/glm/./ext/quaternion_float_precision.hpp \
- ../../../libs/glm/include/glm/./ext/scalar_int_sized.hpp \
- ../../../libs/glm/include/glm/./ext/scalar_relational.hpp \
- ../../../libs/glm/include/glm/./ext/scalar_relational.inl \
- ../../../libs/glm/include/glm/./ext/../ext/scalar_uint_sized.hpp \
- ../../../libs/glm/include/glm/./ext/../ext/../detail/setup.hpp \
- ../../../libs/glm/include/glm/./ext/vector_bool1.hpp \
- ../../../libs/glm/include/glm/./ext/vector_bool1_precision.hpp \
- ../../../libs/glm/include/glm/./ext/vector_double1.hpp \
- ../../../libs/glm/include/glm/./ext/vector_double1_precision.hpp \
- ../../../libs/glm/include/glm/./ext/vector_float1.hpp \
- ../../../libs/glm/include/glm/./ext/vector_float1_precision.hpp \
- ../../../libs/glm/include/glm/./ext/vector_int1.hpp \
- ../../../libs/glm/include/glm/./ext/vector_int1_precision.hpp \
- ../../../libs/glm/include/glm/./ext/vector_uint1.hpp \
- ../../../libs/glm/include/glm/./ext/vector_uint1_precision.hpp \
- ../../../libs/glm/include/glm/./gtc/bitfield.hpp \
- ../../../libs/glm/include/glm/./gtc/../detail/setup.hpp \
- ../../../libs/glm/include/glm/./gtc/type_precision.hpp \
- ../../../libs/glm/include/glm/./gtc/../gtc/quaternion.hpp \
- ../../../libs/glm/include/glm/./gtc/../gtc/../ext/quaternion_common.hpp \
- ../../../libs/glm/include/glm/./gtc/../gtc/../ext/quaternion_common.inl \
- ../../../libs/glm/include/glm/./gtc/../gtc/../ext/quaternion_trigonometric.hpp \
- ../../../libs/glm/include/glm/./gtc/../gtc/../ext/quaternion_trigonometric.inl \
- ../../../libs/glm/include/glm/./gtc/../gtc/../ext/quaternion_transform.hpp \
- ../../../libs/glm/include/glm/./gtc/../gtc/../ext/quaternion_transform.inl \
- ../../../libs/glm/include/glm/./gtc/../gtc/quaternion.inl \
- ../../../libs/glm/include/glm/./gtc/../gtc/epsilon.hpp \
- ../../../libs/glm/include/glm/./gtc/../gtc/../detail/setup.hpp \
- ../../../libs/glm/include/glm/./gtc/../gtc/epsilon.inl \
- ../../../libs/glm/include/glm/./gtc/../gtc/vec1.hpp \
- ../../../libs/glm/include/glm/./gtc/type_precision.inl \
- ../../../libs/glm/include/glm/./gtc/bitfield.inl \
- ../../../libs/glm/include/glm/./gtc/../simd/integer.h \
- ../../../libs/glm/include/glm/./gtc/color_space.hpp \
- ../../../libs/glm/include/glm/./gtc/color_space.inl \
- ../../../libs/glm/include/glm/./gtc/integer.hpp \
- ../../../libs/glm/include/glm/./gtc/integer.inl \
- ../../../libs/glm/include/glm/./gtc/matrix_access.hpp \
- ../../../libs/glm/include/glm/./gtc/matrix_access.inl \
- ../../../libs/glm/include/glm/./gtc/matrix_integer.hpp \
- ../../../libs/glm/include/glm/./gtc/matrix_inverse.hpp \
- ../../../libs/glm/include/glm/./gtc/matrix_inverse.inl \
- ../../../libs/glm/include/glm/./gtc/noise.hpp \
- ../../../libs/glm/include/glm/./gtc/../detail/_noise.hpp \
- ../../../libs/glm/include/glm/./gtc/noise.inl \
- ../../../libs/glm/include/glm/./gtc/packing.hpp \
- ../../../libs/glm/include/glm/./gtc/packing.inl \
- ../../../libs/glm/include/glm/./gtc/random.hpp \
- ../../../libs/glm/include/glm/./gtc/random.inl \
- ../../../libs/glm/include/glm/./gtc/reciprocal.hpp \
- ../../../libs/glm/include/glm/./gtc/reciprocal.inl \
- ../../../libs/glm/include/glm/./gtc/round.hpp \
- ../../../libs/glm/include/glm/./gtc/round.inl \
- ../../../libs/glm/include/glm/./gtc/../ext/vector_integer.hpp \
- ../../../libs/glm/include/glm/./gtc/../ext/../detail/setup.hpp \
- ../../../libs/glm/include/glm/./gtc/../ext/vector_integer.inl \
- ../../../libs/glm/include/glm/./gtc/../ext/scalar_integer.hpp \
- ../../../libs/glm/include/glm/./gtc/../ext/scalar_integer.inl \
- ../../../libs/glm/include/glm/./gtc/type_ptr.hpp \
- ../../../libs/glm/include/glm/./gtc/type_ptr.inl \
- ../../../libs/glm/include/glm/./gtc/ulp.hpp \
- ../../../libs/glm/include/glm/./gtc/ulp.inl \
- ../../../libs/glm/include/glm/./gtc/../ext/scalar_ulp.hpp \
- ../../../libs/glm/include/glm/./gtc/../ext/scalar_ulp.inl \
+ ../../../libs/glm/include/glm/gtc/matrix_transform.hpp \
+ ../../../libs/glm/include/glm/gtc/../ext/matrix_projection.hpp \
+ ../../../libs/glm/include/glm/gtc/../ext/matrix_projection.inl \
+ ../../../libs/glm/include/glm/gtc/../ext/matrix_clip_space.hpp \
+ ../../../libs/glm/include/glm/gtc/../ext/matrix_clip_space.inl \
+ ../../../libs/glm/include/glm/gtc/../ext/matrix_transform.hpp \
+ ../../../libs/glm/include/glm/gtc/../ext/matrix_transform.inl \
+ ../../../libs/glm/include/glm/gtc/matrix_transform.inl \
+ ../../../libs/glm/include/glm/gtc/matrix_inverse.hpp \
+ ../../../libs/glm/include/glm/gtc/../detail/setup.hpp \
+ ../../../libs/glm/include/glm/gtc/matrix_inverse.inl \
+ ../../../libs/glm/include/glm/gtc/quaternion.hpp \
+ ../../../libs/glm/include/glm/gtc/../ext/vector_relational.hpp \
+ ../../../libs/glm/include/glm/gtc/../ext/vector_relational.inl \
+ ../../../libs/glm/include/glm/gtc/../ext/../detail/type_float.hpp \
+ ../../../libs/glm/include/glm/gtc/../ext/../detail/setup.hpp \
+ ../../../libs/glm/include/glm/gtc/../ext/quaternion_common.hpp \
+ ../../../libs/glm/include/glm/gtc/../ext/../ext/quaternion_geometric.hpp \
+ ../../../libs/glm/include/glm/gtc/../ext/../ext/quaternion_geometric.inl \
+ ../../../libs/glm/include/glm/gtc/../ext/quaternion_common.inl \
+ ../../../libs/glm/include/glm/gtc/../ext/quaternion_float.hpp \
+ ../../../libs/glm/include/glm/gtc/../ext/../detail/type_quat.hpp \
+ ../../../libs/glm/include/glm/gtc/../ext/../detail/../ext/quaternion_relational.hpp \
+ ../../../libs/glm/include/glm/gtc/../ext/../detail/../ext/quaternion_relational.inl \
+ ../../../libs/glm/include/glm/gtc/../ext/../detail/type_quat.inl \
+ ../../../libs/glm/include/glm/gtc/../ext/quaternion_float_precision.hpp \
+ ../../../libs/glm/include/glm/gtc/../ext/quaternion_double.hpp \
+ ../../../libs/glm/include/glm/gtc/../ext/quaternion_double_precision.hpp \
+ ../../../libs/glm/include/glm/gtc/../ext/quaternion_trigonometric.hpp \
+ ../../../libs/glm/include/glm/gtc/../ext/quaternion_trigonometric.inl \
+ ../../../libs/glm/include/glm/gtc/../ext/quaternion_transform.hpp \
+ ../../../libs/glm/include/glm/gtc/../ext/quaternion_transform.inl \
+ ../../../libs/glm/include/glm/gtc/quaternion.inl \
+ ../../../libs/glm/include/glm/gtc/epsilon.hpp \
+ ../../../libs/glm/include/glm/gtc/epsilon.inl \
  ../../../libs/glm/include/glm/gtx/norm.hpp \
  ../../../libs/glm/include/glm/gtx/../gtx/quaternion.hpp \
+ ../../../libs/glm/include/glm/gtx/../gtx/../glm.hpp \
+ ../../../libs/glm/include/glm/gtx/../gtx/../detail/_fixes.hpp \
+ ../../../libs/glm/include/glm/gtx/../gtx/../detail/setup.hpp \
+ ../../../libs/glm/include/glm/gtx/../gtx/../packing.hpp \
+ ../../../libs/glm/include/glm/gtx/../gtx/../detail/func_packing.inl \
+ ../../../libs/glm/include/glm/gtx/../gtx/../detail/type_half.hpp \
+ ../../../libs/glm/include/glm/gtx/../gtx/../detail/setup.hpp \
+ ../../../libs/glm/include/glm/gtx/../gtx/../detail/type_half.inl \
+ ../../../libs/glm/include/glm/gtx/../gtx/../integer.hpp \
+ ../../../libs/glm/include/glm/gtx/../gtx/../detail/func_integer.inl \
  ../../../libs/glm/include/glm/gtx/../gtx/../ext/quaternion_exponential.hpp \
  ../../../libs/glm/include/glm/gtx/../gtx/../ext/quaternion_exponential.inl \
  ../../../libs/glm/include/glm/gtx/../gtx/quaternion.inl \
@@ -295,6 +244,19 @@ obj/linux64/Release/src/vidLayer.o: \
  ../../../libs/glm/include/glm/gtx/vector_angle.inl \
  ../../../libs/glm/include/glm/gtx/scalar_multiplication.hpp \
  ../../../libs/glm/include/glm/gtx/../detail/setup.hpp \
+ ../../../libs/glm/include/glm/gtc/type_ptr.hpp \
+ ../../../libs/glm/include/glm/gtc/../gtc/vec1.hpp \
+ ../../../libs/glm/include/glm/gtc/../gtc/../ext/vector_bool1.hpp \
+ ../../../libs/glm/include/glm/gtc/../gtc/../ext/vector_bool1_precision.hpp \
+ ../../../libs/glm/include/glm/gtc/../gtc/../ext/vector_float1.hpp \
+ ../../../libs/glm/include/glm/gtc/../gtc/../ext/vector_float1_precision.hpp \
+ ../../../libs/glm/include/glm/gtc/../gtc/../ext/vector_double1.hpp \
+ ../../../libs/glm/include/glm/gtc/../gtc/../ext/vector_double1_precision.hpp \
+ ../../../libs/glm/include/glm/gtc/../gtc/../ext/vector_int1.hpp \
+ ../../../libs/glm/include/glm/gtc/../gtc/../ext/vector_int1_precision.hpp \
+ ../../../libs/glm/include/glm/gtc/../gtc/../ext/vector_uint1.hpp \
+ ../../../libs/glm/include/glm/gtc/../gtc/../ext/vector_uint1_precision.hpp \
+ ../../../libs/glm/include/glm/gtc/type_ptr.inl \
  ../../../libs/openFrameworks/math/ofMatrix3x3.h \
  ../../../libs/openFrameworks/math/ofMatrix4x4.h \
  ../../../libs/openFrameworks/math/ofQuaternion.h \
@@ -395,6 +357,10 @@ obj/linux64/Release/src/vidLayer.o: \
  /usr/include/glib-2.0/glib/gpattern.h \
  /usr/include/glib-2.0/glib/gprimes.h /usr/include/glib-2.0/glib/gqsort.h \
  /usr/include/glib-2.0/glib/gqueue.h /usr/include/glib-2.0/glib/grand.h \
+ /usr/include/glib-2.0/glib/grcbox.h \
+ /usr/include/glib-2.0/glib/grefcount.h \
+ /usr/include/glib-2.0/glib/grefstring.h \
+ /usr/include/glib-2.0/glib/gmem.h /usr/include/glib-2.0/glib/gmacros.h \
  /usr/include/glib-2.0/glib/gregex.h \
  /usr/include/glib-2.0/glib/gscanner.h \
  /usr/include/glib-2.0/glib/gsequence.h \
@@ -430,6 +396,7 @@ obj/linux64/Release/src/vidLayer.o: \
  /usr/include/glib-2.0/gobject/gboxed.h \
  /usr/include/glib-2.0/gobject/glib-types.h \
  /usr/include/glib-2.0/gobject/genums.h \
+ /usr/include/glib-2.0/gobject/glib-enumtypes.h \
  /usr/include/glib-2.0/gobject/gparamspecs.h \
  /usr/include/glib-2.0/gobject/gsourceclosure.h \
  /usr/include/glib-2.0/gobject/gtypemodule.h \
@@ -526,9 +493,11 @@ obj/linux64/Release/src/vidLayer.o: \
  /usr/include/gstreamer-1.0/gst/video/video-multiview.h \
  /usr/include/gstreamer-1.0/gst/video/colorbalancechannel.h \
  /usr/include/gstreamer-1.0/gst/video/colorbalance.h \
+ /usr/include/gstreamer-1.0/gst/video/gstvideoaggregator.h \
+ /usr/include/gstreamer-1.0/gst/base/gstaggregator.h \
+ /usr/include/gstreamer-1.0/gst/base/base-prelude.h \
  /usr/include/gstreamer-1.0/gst/video/gstvideodecoder.h \
  /usr/include/gstreamer-1.0/gst/base/gstadapter.h \
- /usr/include/gstreamer-1.0/gst/base/base-prelude.h \
  /usr/include/gstreamer-1.0/gst/video/gstvideoutils.h \
  /usr/include/gstreamer-1.0/gst/video/gstvideoencoder.h \
  /usr/include/gstreamer-1.0/gst/video/gstvideofilter.h \
@@ -546,47 +515,183 @@ obj/linux64/Release/src/vidLayer.o: \
  /usr/include/gstreamer-1.0/gst/video/video-overlay-composition.h \
  /usr/include/gstreamer-1.0/gst/video/videooverlay.h \
  /usr/include/gstreamer-1.0/gst/video/gstvideoaffinetransformationmeta.h \
+ /usr/include/gstreamer-1.0/gst/video/video-anc.h \
  ../../../libs/openFrameworks/video/ofVideoPlayer.h \
  ../../../libs/openFrameworks/video/ofGstVideoPlayer.h \
  ../../../libs/openFrameworks/3d/of3dUtils.h \
  ../../../libs/openFrameworks/3d/ofCamera.h \
  ../../../libs/openFrameworks/3d/ofEasyCam.h \
- /home/ali/Documents/of_v0.11.0_linux64gcc6_release/addons/ofxMidi/src/ofxMidi.h \
- /home/ali/Documents/of_v0.11.0_linux64gcc6_release/addons/ofxMidi/src/ofxMidiIn.h \
- /home/ali/Documents/of_v0.11.0_linux64gcc6_release/addons/ofxMidi/src/ofxBaseMidi.h \
- /home/ali/Documents/of_v0.11.0_linux64gcc6_release/addons/ofxMidi/src/ofxMidiConstants.h \
- /home/ali/Documents/of_v0.11.0_linux64gcc6_release/addons/ofxMidi/src/ofxMidiMessage.h \
- /home/ali/Documents/of_v0.11.0_linux64gcc6_release/addons/ofxMidi/src/ofxMidiTypes.h \
- /home/ali/Documents/of_v0.11.0_linux64gcc6_release/addons/ofxMidi/src/desktop/ofxRtMidiIn.h \
- /home/ali/Documents/of_v0.11.0_linux64gcc6_release/addons/ofxMidi/libs/rtmidi/RtMidi.h \
- /home/ali/Documents/of_v0.11.0_linux64gcc6_release/addons/ofxMidi/src/ofxMidiOut.h \
- /home/ali/Documents/of_v0.11.0_linux64gcc6_release/addons/ofxMidi/src/desktop/ofxRtMidiOut.h \
- /home/ali/Documents/of_v0.11.0_linux64gcc6_release/addons/ofxMidi/src/ofxMidiClock.h \
- /home/ali/Documents/of_v0.11.0_linux64gcc6_release/addons/ofxMidi/src/ofxMidiTimecode.h \
- /home/ali/Documents/of_v0.11.0_linux64gcc6_release/apps/myApps/MOD/src/vidLayer.h \
- /home/ali/Documents/of_v0.11.0_linux64gcc6_release/addons/ofxCv/src/ofxCv.h \
- /home/ali/Documents/of_v0.11.0_linux64gcc6_release/addons/ofxCv/libs/ofxCv/include/ofxCv/Utilities.h \
- /home/ali/Documents/of_v0.11.0_linux64gcc6_release/addons/ofxCv/libs/ofxCv/include/ofxCv/Wrappers.h \
- /home/ali/Documents/of_v0.11.0_linux64gcc6_release/addons/ofxCv/libs/CLD/include/CLD/imatrix.h \
- /home/ali/Documents/of_v0.11.0_linux64gcc6_release/addons/ofxCv/libs/CLD/include/CLD/ETF.h \
- /home/ali/Documents/of_v0.11.0_linux64gcc6_release/addons/ofxCv/libs/CLD/include/CLD/imatrix.h \
- /home/ali/Documents/of_v0.11.0_linux64gcc6_release/addons/ofxCv/libs/CLD/include/CLD/fdog.h \
- /home/ali/Documents/of_v0.11.0_linux64gcc6_release/addons/ofxCv/libs/CLD/include/CLD/myvec.h \
- /home/ali/Documents/of_v0.11.0_linux64gcc6_release/addons/ofxCv/libs/ofxCv/include/ofxCv/Helpers.h \
- /home/ali/Documents/of_v0.11.0_linux64gcc6_release/addons/ofxCv/libs/ofxCv/include/ofxCv/Distance.h \
- /home/ali/Documents/of_v0.11.0_linux64gcc6_release/addons/ofxCv/libs/ofxCv/include/ofxCv/Calibration.h \
- /home/ali/Documents/of_v0.11.0_linux64gcc6_release/addons/ofxCv/libs/ofxCv/include/ofxCv/Tracker.h \
- /home/ali/Documents/of_v0.11.0_linux64gcc6_release/addons/ofxCv/libs/ofxCv/include/ofxCv/ContourFinder.h \
- /home/ali/Documents/of_v0.11.0_linux64gcc6_release/addons/ofxCv/libs/ofxCv/include/ofxCv/RunningBackground.h \
- /home/ali/Documents/of_v0.11.0_linux64gcc6_release/addons/ofxCv/libs/ofxCv/include/ofxCv/Flow.h \
- /home/ali/Documents/of_v0.11.0_linux64gcc6_release/addons/ofxCv/libs/ofxCv/include/ofxCv/ObjectFinder.h \
- /home/ali/Documents/of_v0.11.0_linux64gcc6_release/addons/ofxCv/libs/ofxCv/include/ofxCv/Kalman.h \
- /home/ali/Documents/of_v0.11.0_linux64gcc6_release/apps/myApps/MOD/src/Utils.h \
- /home/ali/Documents/of_v0.11.0_linux64gcc6_release/addons/ofxXmlSettings/src/ofxXmlSettings.h \
- /home/ali/Documents/of_v0.11.0_linux64gcc6_release/addons/ofxXmlSettings/libs/tinyxml.h \
- /home/ali/Documents/of_v0.11.0_linux64gcc6_release/apps/myApps/MOD/src/ConsoleListener.h
+ /home/ali/Documents/Dev/of_v0.11.2_linux64gcc6_release/addons/ofxMidi/src/ofxMidi.h \
+ /home/ali/Documents/Dev/of_v0.11.2_linux64gcc6_release/addons/ofxMidi/src/ofxMidiIn.h \
+ /home/ali/Documents/Dev/of_v0.11.2_linux64gcc6_release/addons/ofxMidi/src/ofxBaseMidi.h \
+ /home/ali/Documents/Dev/of_v0.11.2_linux64gcc6_release/addons/ofxMidi/src/ofxMidiConstants.h \
+ /home/ali/Documents/Dev/of_v0.11.2_linux64gcc6_release/addons/ofxMidi/src/ofxMidiMessage.h \
+ /home/ali/Documents/Dev/of_v0.11.2_linux64gcc6_release/addons/ofxMidi/src/ofxMidiTypes.h \
+ /home/ali/Documents/Dev/of_v0.11.2_linux64gcc6_release/addons/ofxMidi/src/desktop/ofxRtMidiIn.h \
+ /home/ali/Documents/Dev/of_v0.11.2_linux64gcc6_release/addons/ofxMidi/libs/rtmidi/RtMidi.h \
+ /home/ali/Documents/Dev/of_v0.11.2_linux64gcc6_release/addons/ofxMidi/src/ofxMidiOut.h \
+ /home/ali/Documents/Dev/of_v0.11.2_linux64gcc6_release/addons/ofxMidi/src/desktop/ofxRtMidiOut.h \
+ /home/ali/Documents/Dev/of_v0.11.2_linux64gcc6_release/addons/ofxMidi/src/ofxMidiClock.h \
+ /home/ali/Documents/Dev/of_v0.11.2_linux64gcc6_release/addons/ofxMidi/src/ofxMidiTimecode.h \
+ /home/ali/Documents/Dev/of_v0.11.2_linux64gcc6_release/apps/myApps/MOD/src/vidLayer.h \
+ /home/ali/Documents/Dev/of_v0.11.2_linux64gcc6_release/addons/ofxCv/src/ofxCv.h \
+ /usr/include/opencv4/opencv2/opencv.hpp \
+ /usr/include/opencv4/opencv2/opencv_modules.hpp \
+ /usr/include/opencv4/opencv2/core.hpp \
+ /usr/include/opencv4/opencv2/core/cvdef.h \
+ /usr/include/opencv4/opencv2/core/hal/interface.h \
+ /usr/include/opencv4/opencv2/core/cv_cpu_dispatch.h \
+ /usr/include/opencv4/opencv2/core/version.hpp \
+ /usr/include/opencv4/opencv2/core/base.hpp \
+ /usr/include/opencv4/opencv2/core/cvstd.hpp \
+ /usr/include/opencv4/opencv2/core/cvstd_wrapper.hpp \
+ /usr/include/opencv4/opencv2/core/neon_utils.hpp \
+ /usr/include/opencv4/opencv2/core/vsx_utils.hpp \
+ /usr/include/opencv4/opencv2/core/check.hpp \
+ /usr/include/opencv4/opencv2/core/traits.hpp \
+ /usr/include/opencv4/opencv2/core/matx.hpp \
+ /usr/include/opencv4/opencv2/core/saturate.hpp \
+ /usr/include/opencv4/opencv2/core/fast_math.hpp \
+ /usr/include/opencv4/opencv2/core/types.hpp \
+ /usr/include/opencv4/opencv2/core/mat.hpp \
+ /usr/include/opencv4/opencv2/core/bufferpool.hpp \
+ /usr/include/opencv4/opencv2/core/mat.inl.hpp \
+ /usr/include/opencv4/opencv2/core/persistence.hpp \
+ /usr/include/opencv4/opencv2/core/operations.hpp \
+ /usr/include/opencv4/opencv2/core/cvstd.inl.hpp \
+ /usr/include/opencv4/opencv2/core/utility.hpp \
+ /usr/include/opencv4/opencv2/core/optim.hpp \
+ /usr/include/opencv4/opencv2/core/ovx.hpp \
+ /usr/include/opencv4/opencv2/core/cvdef.h \
+ /usr/include/opencv4/opencv2/calib3d.hpp \
+ /usr/include/opencv4/opencv2/features2d.hpp \
+ /usr/include/opencv4/opencv2/flann/miniflann.hpp \
+ /usr/include/opencv4/opencv2/flann/defines.h \
+ /usr/include/opencv4/opencv2/flann/config.h \
+ /usr/include/opencv4/opencv2/core/affine.hpp \
+ /usr/include/opencv4/opencv2/dnn.hpp \
+ /usr/include/opencv4/opencv2/dnn/dnn.hpp \
+ /usr/include/opencv4/opencv2/core/async.hpp \
+ /usr/include/opencv4/opencv2/dnn/../dnn/version.hpp \
+ /usr/include/opencv4/opencv2/dnn/dict.hpp \
+ /usr/include/opencv4/opencv2/dnn/layer.hpp \
+ /usr/include/opencv4/opencv2/dnn/dnn.inl.hpp \
+ /usr/include/opencv4/opencv2/dnn/utils/inference_engine.hpp \
+ /usr/include/opencv4/opencv2/dnn/utils/../dnn.hpp \
+ /usr/include/opencv4/opencv2/flann.hpp \
+ /usr/include/opencv4/opencv2/flann/flann_base.hpp \
+ /usr/include/opencv4/opencv2/flann/general.h \
+ /usr/include/opencv4/opencv2/flann/matrix.h \
+ /usr/include/opencv4/opencv2/flann/params.h \
+ /usr/include/opencv4/opencv2/flann/any.h \
+ /usr/include/opencv4/opencv2/flann/defines.h \
+ /usr/include/opencv4/opencv2/flann/saving.h \
+ /usr/include/opencv4/opencv2/flann/nn_index.h \
+ /usr/include/opencv4/opencv2/flann/result_set.h \
+ /usr/include/opencv4/opencv2/flann/all_indices.h \
+ /usr/include/opencv4/opencv2/flann/kdtree_index.h \
+ /usr/include/opencv4/opencv2/flann/dynamic_bitset.h \
+ /usr/include/opencv4/opencv2/flann/dist.h \
+ /usr/include/opencv4/opencv2/flann/heap.h \
+ /usr/include/opencv4/opencv2/flann/allocator.h \
+ /usr/include/opencv4/opencv2/flann/random.h \
+ /usr/include/opencv4/opencv2/flann/kdtree_single_index.h \
+ /usr/include/opencv4/opencv2/flann/kmeans_index.h \
+ /usr/include/opencv4/opencv2/flann/logger.h \
+ /usr/include/opencv4/opencv2/flann/composite_index.h \
+ /usr/include/opencv4/opencv2/flann/linear_index.h \
+ /usr/include/opencv4/opencv2/flann/hierarchical_clustering_index.h \
+ /usr/include/opencv4/opencv2/flann/lsh_index.h \
+ /usr/include/opencv4/opencv2/flann/lsh_table.h \
+ /usr/include/opencv4/opencv2/flann/autotuned_index.h \
+ /usr/include/opencv4/opencv2/flann/ground_truth.h \
+ /usr/include/opencv4/opencv2/flann/index_testing.h \
+ /usr/include/opencv4/opencv2/flann/timer.h \
+ /usr/include/opencv4/opencv2/flann/sampling.h \
+ /usr/include/opencv4/opencv2/highgui.hpp \
+ /usr/include/opencv4/opencv2/imgcodecs.hpp \
+ /usr/include/opencv4/opencv2/videoio.hpp \
+ /usr/include/opencv4/opencv2/imgproc.hpp \
+ /usr/include/opencv4/opencv2/ml.hpp \
+ /usr/include/opencv4/opencv2/ml/ml.inl.hpp \
+ /usr/include/opencv4/opencv2/objdetect.hpp \
+ /usr/include/opencv4/opencv2/objdetect/detection_based_tracker.hpp \
+ /usr/include/opencv4/opencv2/photo.hpp \
+ /usr/include/opencv4/opencv2/shape.hpp \
+ /usr/include/opencv4/opencv2/shape/emdL1.hpp \
+ /usr/include/opencv4/opencv2/shape/shape_transformer.hpp \
+ /usr/include/opencv4/opencv2/shape/hist_cost.hpp \
+ /usr/include/opencv4/opencv2/shape/shape_distance.hpp \
+ /usr/include/opencv4/opencv2/stitching.hpp \
+ /usr/include/opencv4/opencv2/stitching/warpers.hpp \
+ /usr/include/opencv4/opencv2/stitching/detail/warpers.hpp \
+ /usr/include/opencv4/opencv2/core/cuda.hpp \
+ /usr/include/opencv4/opencv2/core/cuda_types.hpp \
+ /usr/include/opencv4/opencv2/core/cuda.inl.hpp \
+ /usr/include/opencv4/opencv2/stitching/detail/warpers_inl.hpp \
+ /usr/include/opencv4/opencv2/stitching/detail/warpers.hpp \
+ /usr/include/opencv4/opencv2/stitching/detail/matchers.hpp \
+ /usr/include/opencv4/opencv2/stitching/detail/motion_estimators.hpp \
+ /usr/include/opencv4/opencv2/stitching/detail/matchers.hpp \
+ /usr/include/opencv4/opencv2/stitching/detail/util.hpp \
+ /usr/include/opencv4/opencv2/stitching/detail/util_inl.hpp \
+ /usr/include/opencv4/opencv2/stitching/detail/camera.hpp \
+ /usr/include/opencv4/opencv2/stitching/detail/exposure_compensate.hpp \
+ /usr/include/opencv4/opencv2/stitching/detail/seam_finders.hpp \
+ /usr/include/opencv4/opencv2/stitching/detail/blenders.hpp \
+ /usr/include/opencv4/opencv2/stitching/detail/camera.hpp \
+ /usr/include/opencv4/opencv2/superres.hpp \
+ /usr/include/opencv4/opencv2/superres/optical_flow.hpp \
+ /usr/include/opencv4/opencv2/video.hpp \
+ /usr/include/opencv4/opencv2/video/tracking.hpp \
+ /usr/include/opencv4/opencv2/video/background_segm.hpp \
+ /usr/include/opencv4/opencv2/videostab.hpp \
+ /usr/include/opencv4/opencv2/videostab/stabilizer.hpp \
+ /usr/include/opencv4/opencv2/videostab/global_motion.hpp \
+ /usr/include/opencv4/opencv2/videostab/optical_flow.hpp \
+ /usr/include/opencv4/opencv2/videostab/motion_core.hpp \
+ /usr/include/opencv4/opencv2/videostab/outlier_rejection.hpp \
+ /usr/include/opencv4/opencv2/videostab/motion_stabilizing.hpp \
+ /usr/include/opencv4/opencv2/videostab/frame_source.hpp \
+ /usr/include/opencv4/opencv2/videostab/log.hpp \
+ /usr/include/opencv4/opencv2/videostab/inpainting.hpp \
+ /usr/include/opencv4/opencv2/videostab/fast_marching.hpp \
+ /usr/include/opencv4/opencv2/videostab/fast_marching_inl.hpp \
+ /usr/include/opencv4/opencv2/videostab/deblurring.hpp \
+ /usr/include/opencv4/opencv2/videostab/wobble_suppression.hpp \
+ /usr/include/opencv4/opencv2/videostab/ring_buffer.hpp \
+ /usr/include/opencv4/opencv2/viz.hpp \
+ /usr/include/opencv4/opencv2/viz/types.hpp \
+ /usr/include/opencv4/opencv2/viz/widgets.hpp \
+ /usr/include/opencv4/opencv2/viz/viz3d.hpp \
+ /usr/include/opencv4/opencv2/viz/vizcore.hpp \
+ /home/ali/Documents/Dev/of_v0.11.2_linux64gcc6_release/addons/ofxCv/libs/ofxCv/include/ofxCv/Utilities.h \
+ /usr/include/opencv4/opencv2/imgproc/imgproc_c.h \
+ /usr/include/opencv4/opencv2/imgproc/types_c.h \
+ /usr/include/opencv4/opencv2/core/core_c.h \
+ /usr/include/opencv4/opencv2/core/types_c.h \
+ /usr/include/opencv4/opencv2/calib3d/calib3d_c.h \
+ /home/ali/Documents/Dev/of_v0.11.2_linux64gcc6_release/addons/ofxCv/libs/ofxCv/include/ofxCv/Wrappers.h \
+ /home/ali/Documents/Dev/of_v0.11.2_linux64gcc6_release/addons/ofxCv/libs/CLD/include/CLD/imatrix.h \
+ /home/ali/Documents/Dev/of_v0.11.2_linux64gcc6_release/addons/ofxCv/libs/CLD/include/CLD/ETF.h \
+ /home/ali/Documents/Dev/of_v0.11.2_linux64gcc6_release/addons/ofxCv/libs/CLD/include/CLD/imatrix.h \
+ /home/ali/Documents/Dev/of_v0.11.2_linux64gcc6_release/addons/ofxCv/libs/CLD/include/CLD/fdog.h \
+ /home/ali/Documents/Dev/of_v0.11.2_linux64gcc6_release/addons/ofxCv/libs/CLD/include/CLD/myvec.h \
+ /home/ali/Documents/Dev/of_v0.11.2_linux64gcc6_release/addons/ofxCv/libs/ofxCv/include/ofxCv/Helpers.h \
+ /home/ali/Documents/Dev/of_v0.11.2_linux64gcc6_release/addons/ofxCv/libs/ofxCv/include/ofxCv/Distance.h \
+ /home/ali/Documents/Dev/of_v0.11.2_linux64gcc6_release/addons/ofxCv/libs/ofxCv/include/ofxCv/Calibration.h \
+ /home/ali/Documents/Dev/of_v0.11.2_linux64gcc6_release/addons/ofxCv/libs/ofxCv/include/ofxCv/Tracker.h \
+ /home/ali/Documents/Dev/of_v0.11.2_linux64gcc6_release/addons/ofxCv/libs/ofxCv/include/ofxCv/ContourFinder.h \
+ /home/ali/Documents/Dev/of_v0.11.2_linux64gcc6_release/addons/ofxCv/libs/ofxCv/include/ofxCv/RunningBackground.h \
+ /home/ali/Documents/Dev/of_v0.11.2_linux64gcc6_release/addons/ofxCv/libs/ofxCv/include/ofxCv/Flow.h \
+ /home/ali/Documents/Dev/of_v0.11.2_linux64gcc6_release/addons/ofxCv/libs/ofxCv/include/ofxCv/ObjectFinder.h \
+ /home/ali/Documents/Dev/of_v0.11.2_linux64gcc6_release/addons/ofxCv/libs/ofxCv/include/ofxCv/Kalman.h \
+ /home/ali/Documents/Dev/of_v0.11.2_linux64gcc6_release/apps/myApps/MOD/src/Utils.h \
+ /home/ali/Documents/Dev/of_v0.11.2_linux64gcc6_release/addons/ofxXmlSettings/src/ofxXmlSettings.h \
+ /home/ali/Documents/Dev/of_v0.11.2_linux64gcc6_release/addons/ofxXmlSettings/libs/tinyxml.h \
+ /home/ali/Documents/Dev/of_v0.11.2_linux64gcc6_release/apps/myApps/MOD/src/ConsoleListener.h
 
-/home/ali/Documents/of_v0.11.0_linux64gcc6_release/apps/myApps/MOD/src/ofApp.h:
+/home/ali/Documents/Dev/of_v0.11.2_linux64gcc6_release/apps/myApps/MOD/src/ofApp.h:
 
 ../../../libs/openFrameworks/ofMain.h:
 
@@ -934,201 +1039,99 @@ obj/linux64/Release/src/vidLayer.o: \
 
 ../../../libs/glm/include/glm/detail/func_trigonometric.inl:
 
-../../../libs/glm/include/glm/ext.hpp:
+../../../libs/glm/include/glm/gtc/matrix_transform.hpp:
 
-../../../libs/glm/include/glm/glm.hpp:
+../../../libs/glm/include/glm/gtc/../ext/matrix_projection.hpp:
 
-../../../libs/glm/include/glm/packing.hpp:
+../../../libs/glm/include/glm/gtc/../ext/matrix_projection.inl:
 
-../../../libs/glm/include/glm/detail/func_packing.inl:
+../../../libs/glm/include/glm/gtc/../ext/matrix_clip_space.hpp:
 
-../../../libs/glm/include/glm/detail/type_half.hpp:
+../../../libs/glm/include/glm/gtc/../ext/matrix_clip_space.inl:
 
-../../../libs/glm/include/glm/detail/type_half.inl:
+../../../libs/glm/include/glm/gtc/../ext/matrix_transform.hpp:
 
-../../../libs/glm/include/glm/integer.hpp:
+../../../libs/glm/include/glm/gtc/../ext/matrix_transform.inl:
 
-../../../libs/glm/include/glm/detail/func_integer.inl:
+../../../libs/glm/include/glm/gtc/matrix_transform.inl:
 
-../../../libs/glm/include/glm/./ext/matrix_relational.hpp:
+../../../libs/glm/include/glm/gtc/matrix_inverse.hpp:
 
-../../../libs/glm/include/glm/./ext/matrix_relational.inl:
+../../../libs/glm/include/glm/gtc/../detail/setup.hpp:
 
-../../../libs/glm/include/glm/./ext/../ext/vector_relational.hpp:
+../../../libs/glm/include/glm/gtc/matrix_inverse.inl:
 
-../../../libs/glm/include/glm/./ext/../ext/vector_relational.inl:
+../../../libs/glm/include/glm/gtc/quaternion.hpp:
 
-../../../libs/glm/include/glm/./ext/../ext/../detail/type_float.hpp:
+../../../libs/glm/include/glm/gtc/../ext/vector_relational.hpp:
 
-../../../libs/glm/include/glm/./ext/../ext/../detail/setup.hpp:
+../../../libs/glm/include/glm/gtc/../ext/vector_relational.inl:
 
-../../../libs/glm/include/glm/./ext/quaternion_double.hpp:
+../../../libs/glm/include/glm/gtc/../ext/../detail/type_float.hpp:
 
-../../../libs/glm/include/glm/./ext/../detail/type_quat.hpp:
+../../../libs/glm/include/glm/gtc/../ext/../detail/setup.hpp:
 
-../../../libs/glm/include/glm/./ext/../detail/../ext/quaternion_relational.hpp:
+../../../libs/glm/include/glm/gtc/../ext/quaternion_common.hpp:
 
-../../../libs/glm/include/glm/./ext/../detail/../ext/quaternion_relational.inl:
+../../../libs/glm/include/glm/gtc/../ext/../ext/quaternion_geometric.hpp:
 
-../../../libs/glm/include/glm/./ext/../detail/../gtc/matrix_transform.hpp:
+../../../libs/glm/include/glm/gtc/../ext/../ext/quaternion_geometric.inl:
 
-../../../libs/glm/include/glm/./ext/../detail/../gtc/../ext/matrix_projection.hpp:
+../../../libs/glm/include/glm/gtc/../ext/quaternion_common.inl:
 
-../../../libs/glm/include/glm/./ext/../detail/../gtc/../ext/matrix_projection.inl:
+../../../libs/glm/include/glm/gtc/../ext/quaternion_float.hpp:
 
-../../../libs/glm/include/glm/./ext/../detail/../gtc/../ext/matrix_clip_space.hpp:
+../../../libs/glm/include/glm/gtc/../ext/../detail/type_quat.hpp:
 
-../../../libs/glm/include/glm/./ext/../detail/../gtc/../ext/matrix_clip_space.inl:
+../../../libs/glm/include/glm/gtc/../ext/../detail/../ext/quaternion_relational.hpp:
 
-../../../libs/glm/include/glm/./ext/../detail/../gtc/../ext/matrix_transform.hpp:
+../../../libs/glm/include/glm/gtc/../ext/../detail/../ext/quaternion_relational.inl:
 
-../../../libs/glm/include/glm/./ext/../detail/../gtc/../ext/matrix_transform.inl:
+../../../libs/glm/include/glm/gtc/../ext/../detail/type_quat.inl:
 
-../../../libs/glm/include/glm/./ext/../detail/../gtc/matrix_transform.inl:
+../../../libs/glm/include/glm/gtc/../ext/quaternion_float_precision.hpp:
 
-../../../libs/glm/include/glm/./ext/../detail/type_quat.inl:
+../../../libs/glm/include/glm/gtc/../ext/quaternion_double.hpp:
 
-../../../libs/glm/include/glm/./ext/../detail/../ext/quaternion_geometric.hpp:
+../../../libs/glm/include/glm/gtc/../ext/quaternion_double_precision.hpp:
 
-../../../libs/glm/include/glm/./ext/../detail/../ext/quaternion_geometric.inl:
+../../../libs/glm/include/glm/gtc/../ext/quaternion_trigonometric.hpp:
 
-../../../libs/glm/include/glm/./ext/quaternion_double_precision.hpp:
+../../../libs/glm/include/glm/gtc/../ext/quaternion_trigonometric.inl:
 
-../../../libs/glm/include/glm/./ext/quaternion_float.hpp:
+../../../libs/glm/include/glm/gtc/../ext/quaternion_transform.hpp:
 
-../../../libs/glm/include/glm/./ext/quaternion_float_precision.hpp:
+../../../libs/glm/include/glm/gtc/../ext/quaternion_transform.inl:
 
-../../../libs/glm/include/glm/./ext/scalar_int_sized.hpp:
+../../../libs/glm/include/glm/gtc/quaternion.inl:
 
-../../../libs/glm/include/glm/./ext/scalar_relational.hpp:
+../../../libs/glm/include/glm/gtc/epsilon.hpp:
 
-../../../libs/glm/include/glm/./ext/scalar_relational.inl:
-
-../../../libs/glm/include/glm/./ext/../ext/scalar_uint_sized.hpp:
-
-../../../libs/glm/include/glm/./ext/../ext/../detail/setup.hpp:
-
-../../../libs/glm/include/glm/./ext/vector_bool1.hpp:
-
-../../../libs/glm/include/glm/./ext/vector_bool1_precision.hpp:
-
-../../../libs/glm/include/glm/./ext/vector_double1.hpp:
-
-../../../libs/glm/include/glm/./ext/vector_double1_precision.hpp:
-
-../../../libs/glm/include/glm/./ext/vector_float1.hpp:
-
-../../../libs/glm/include/glm/./ext/vector_float1_precision.hpp:
-
-../../../libs/glm/include/glm/./ext/vector_int1.hpp:
-
-../../../libs/glm/include/glm/./ext/vector_int1_precision.hpp:
-
-../../../libs/glm/include/glm/./ext/vector_uint1.hpp:
-
-../../../libs/glm/include/glm/./ext/vector_uint1_precision.hpp:
-
-../../../libs/glm/include/glm/./gtc/bitfield.hpp:
-
-../../../libs/glm/include/glm/./gtc/../detail/setup.hpp:
-
-../../../libs/glm/include/glm/./gtc/type_precision.hpp:
-
-../../../libs/glm/include/glm/./gtc/../gtc/quaternion.hpp:
-
-../../../libs/glm/include/glm/./gtc/../gtc/../ext/quaternion_common.hpp:
-
-../../../libs/glm/include/glm/./gtc/../gtc/../ext/quaternion_common.inl:
-
-../../../libs/glm/include/glm/./gtc/../gtc/../ext/quaternion_trigonometric.hpp:
-
-../../../libs/glm/include/glm/./gtc/../gtc/../ext/quaternion_trigonometric.inl:
-
-../../../libs/glm/include/glm/./gtc/../gtc/../ext/quaternion_transform.hpp:
-
-../../../libs/glm/include/glm/./gtc/../gtc/../ext/quaternion_transform.inl:
-
-../../../libs/glm/include/glm/./gtc/../gtc/quaternion.inl:
-
-../../../libs/glm/include/glm/./gtc/../gtc/epsilon.hpp:
-
-../../../libs/glm/include/glm/./gtc/../gtc/../detail/setup.hpp:
-
-../../../libs/glm/include/glm/./gtc/../gtc/epsilon.inl:
-
-../../../libs/glm/include/glm/./gtc/../gtc/vec1.hpp:
-
-../../../libs/glm/include/glm/./gtc/type_precision.inl:
-
-../../../libs/glm/include/glm/./gtc/bitfield.inl:
-
-../../../libs/glm/include/glm/./gtc/../simd/integer.h:
-
-../../../libs/glm/include/glm/./gtc/color_space.hpp:
-
-../../../libs/glm/include/glm/./gtc/color_space.inl:
-
-../../../libs/glm/include/glm/./gtc/integer.hpp:
-
-../../../libs/glm/include/glm/./gtc/integer.inl:
-
-../../../libs/glm/include/glm/./gtc/matrix_access.hpp:
-
-../../../libs/glm/include/glm/./gtc/matrix_access.inl:
-
-../../../libs/glm/include/glm/./gtc/matrix_integer.hpp:
-
-../../../libs/glm/include/glm/./gtc/matrix_inverse.hpp:
-
-../../../libs/glm/include/glm/./gtc/matrix_inverse.inl:
-
-../../../libs/glm/include/glm/./gtc/noise.hpp:
-
-../../../libs/glm/include/glm/./gtc/../detail/_noise.hpp:
-
-../../../libs/glm/include/glm/./gtc/noise.inl:
-
-../../../libs/glm/include/glm/./gtc/packing.hpp:
-
-../../../libs/glm/include/glm/./gtc/packing.inl:
-
-../../../libs/glm/include/glm/./gtc/random.hpp:
-
-../../../libs/glm/include/glm/./gtc/random.inl:
-
-../../../libs/glm/include/glm/./gtc/reciprocal.hpp:
-
-../../../libs/glm/include/glm/./gtc/reciprocal.inl:
-
-../../../libs/glm/include/glm/./gtc/round.hpp:
-
-../../../libs/glm/include/glm/./gtc/round.inl:
-
-../../../libs/glm/include/glm/./gtc/../ext/vector_integer.hpp:
-
-../../../libs/glm/include/glm/./gtc/../ext/../detail/setup.hpp:
-
-../../../libs/glm/include/glm/./gtc/../ext/vector_integer.inl:
-
-../../../libs/glm/include/glm/./gtc/../ext/scalar_integer.hpp:
-
-../../../libs/glm/include/glm/./gtc/../ext/scalar_integer.inl:
-
-../../../libs/glm/include/glm/./gtc/type_ptr.hpp:
-
-../../../libs/glm/include/glm/./gtc/type_ptr.inl:
-
-../../../libs/glm/include/glm/./gtc/ulp.hpp:
-
-../../../libs/glm/include/glm/./gtc/ulp.inl:
-
-../../../libs/glm/include/glm/./gtc/../ext/scalar_ulp.hpp:
-
-../../../libs/glm/include/glm/./gtc/../ext/scalar_ulp.inl:
+../../../libs/glm/include/glm/gtc/epsilon.inl:
 
 ../../../libs/glm/include/glm/gtx/norm.hpp:
 
 ../../../libs/glm/include/glm/gtx/../gtx/quaternion.hpp:
+
+../../../libs/glm/include/glm/gtx/../gtx/../glm.hpp:
+
+../../../libs/glm/include/glm/gtx/../gtx/../detail/_fixes.hpp:
+
+../../../libs/glm/include/glm/gtx/../gtx/../detail/setup.hpp:
+
+../../../libs/glm/include/glm/gtx/../gtx/../packing.hpp:
+
+../../../libs/glm/include/glm/gtx/../gtx/../detail/func_packing.inl:
+
+../../../libs/glm/include/glm/gtx/../gtx/../detail/type_half.hpp:
+
+../../../libs/glm/include/glm/gtx/../gtx/../detail/setup.hpp:
+
+../../../libs/glm/include/glm/gtx/../gtx/../detail/type_half.inl:
+
+../../../libs/glm/include/glm/gtx/../gtx/../integer.hpp:
+
+../../../libs/glm/include/glm/gtx/../gtx/../detail/func_integer.inl:
 
 ../../../libs/glm/include/glm/gtx/../gtx/../ext/quaternion_exponential.hpp:
 
@@ -1175,6 +1178,32 @@ obj/linux64/Release/src/vidLayer.o: \
 ../../../libs/glm/include/glm/gtx/scalar_multiplication.hpp:
 
 ../../../libs/glm/include/glm/gtx/../detail/setup.hpp:
+
+../../../libs/glm/include/glm/gtc/type_ptr.hpp:
+
+../../../libs/glm/include/glm/gtc/../gtc/vec1.hpp:
+
+../../../libs/glm/include/glm/gtc/../gtc/../ext/vector_bool1.hpp:
+
+../../../libs/glm/include/glm/gtc/../gtc/../ext/vector_bool1_precision.hpp:
+
+../../../libs/glm/include/glm/gtc/../gtc/../ext/vector_float1.hpp:
+
+../../../libs/glm/include/glm/gtc/../gtc/../ext/vector_float1_precision.hpp:
+
+../../../libs/glm/include/glm/gtc/../gtc/../ext/vector_double1.hpp:
+
+../../../libs/glm/include/glm/gtc/../gtc/../ext/vector_double1_precision.hpp:
+
+../../../libs/glm/include/glm/gtc/../gtc/../ext/vector_int1.hpp:
+
+../../../libs/glm/include/glm/gtc/../gtc/../ext/vector_int1_precision.hpp:
+
+../../../libs/glm/include/glm/gtc/../gtc/../ext/vector_uint1.hpp:
+
+../../../libs/glm/include/glm/gtc/../gtc/../ext/vector_uint1_precision.hpp:
+
+../../../libs/glm/include/glm/gtc/type_ptr.inl:
 
 ../../../libs/openFrameworks/math/ofMatrix3x3.h:
 
@@ -1404,6 +1433,16 @@ obj/linux64/Release/src/vidLayer.o: \
 
 /usr/include/glib-2.0/glib/grand.h:
 
+/usr/include/glib-2.0/glib/grcbox.h:
+
+/usr/include/glib-2.0/glib/grefcount.h:
+
+/usr/include/glib-2.0/glib/grefstring.h:
+
+/usr/include/glib-2.0/glib/gmem.h:
+
+/usr/include/glib-2.0/glib/gmacros.h:
+
 /usr/include/glib-2.0/glib/gregex.h:
 
 /usr/include/glib-2.0/glib/gscanner.h:
@@ -1477,6 +1516,8 @@ obj/linux64/Release/src/vidLayer.o: \
 /usr/include/glib-2.0/gobject/glib-types.h:
 
 /usr/include/glib-2.0/gobject/genums.h:
+
+/usr/include/glib-2.0/gobject/glib-enumtypes.h:
 
 /usr/include/glib-2.0/gobject/gparamspecs.h:
 
@@ -1670,11 +1711,15 @@ obj/linux64/Release/src/vidLayer.o: \
 
 /usr/include/gstreamer-1.0/gst/video/colorbalance.h:
 
+/usr/include/gstreamer-1.0/gst/video/gstvideoaggregator.h:
+
+/usr/include/gstreamer-1.0/gst/base/gstaggregator.h:
+
+/usr/include/gstreamer-1.0/gst/base/base-prelude.h:
+
 /usr/include/gstreamer-1.0/gst/video/gstvideodecoder.h:
 
 /usr/include/gstreamer-1.0/gst/base/gstadapter.h:
-
-/usr/include/gstreamer-1.0/gst/base/base-prelude.h:
 
 /usr/include/gstreamer-1.0/gst/video/gstvideoutils.h:
 
@@ -1710,6 +1755,8 @@ obj/linux64/Release/src/vidLayer.o: \
 
 /usr/include/gstreamer-1.0/gst/video/gstvideoaffinetransformationmeta.h:
 
+/usr/include/gstreamer-1.0/gst/video/video-anc.h:
+
 ../../../libs/openFrameworks/video/ofVideoPlayer.h:
 
 ../../../libs/openFrameworks/video/ofGstVideoPlayer.h:
@@ -1720,70 +1767,340 @@ obj/linux64/Release/src/vidLayer.o: \
 
 ../../../libs/openFrameworks/3d/ofEasyCam.h:
 
-/home/ali/Documents/of_v0.11.0_linux64gcc6_release/addons/ofxMidi/src/ofxMidi.h:
+/home/ali/Documents/Dev/of_v0.11.2_linux64gcc6_release/addons/ofxMidi/src/ofxMidi.h:
 
-/home/ali/Documents/of_v0.11.0_linux64gcc6_release/addons/ofxMidi/src/ofxMidiIn.h:
+/home/ali/Documents/Dev/of_v0.11.2_linux64gcc6_release/addons/ofxMidi/src/ofxMidiIn.h:
 
-/home/ali/Documents/of_v0.11.0_linux64gcc6_release/addons/ofxMidi/src/ofxBaseMidi.h:
+/home/ali/Documents/Dev/of_v0.11.2_linux64gcc6_release/addons/ofxMidi/src/ofxBaseMidi.h:
 
-/home/ali/Documents/of_v0.11.0_linux64gcc6_release/addons/ofxMidi/src/ofxMidiConstants.h:
+/home/ali/Documents/Dev/of_v0.11.2_linux64gcc6_release/addons/ofxMidi/src/ofxMidiConstants.h:
 
-/home/ali/Documents/of_v0.11.0_linux64gcc6_release/addons/ofxMidi/src/ofxMidiMessage.h:
+/home/ali/Documents/Dev/of_v0.11.2_linux64gcc6_release/addons/ofxMidi/src/ofxMidiMessage.h:
 
-/home/ali/Documents/of_v0.11.0_linux64gcc6_release/addons/ofxMidi/src/ofxMidiTypes.h:
+/home/ali/Documents/Dev/of_v0.11.2_linux64gcc6_release/addons/ofxMidi/src/ofxMidiTypes.h:
 
-/home/ali/Documents/of_v0.11.0_linux64gcc6_release/addons/ofxMidi/src/desktop/ofxRtMidiIn.h:
+/home/ali/Documents/Dev/of_v0.11.2_linux64gcc6_release/addons/ofxMidi/src/desktop/ofxRtMidiIn.h:
 
-/home/ali/Documents/of_v0.11.0_linux64gcc6_release/addons/ofxMidi/libs/rtmidi/RtMidi.h:
+/home/ali/Documents/Dev/of_v0.11.2_linux64gcc6_release/addons/ofxMidi/libs/rtmidi/RtMidi.h:
 
-/home/ali/Documents/of_v0.11.0_linux64gcc6_release/addons/ofxMidi/src/ofxMidiOut.h:
+/home/ali/Documents/Dev/of_v0.11.2_linux64gcc6_release/addons/ofxMidi/src/ofxMidiOut.h:
 
-/home/ali/Documents/of_v0.11.0_linux64gcc6_release/addons/ofxMidi/src/desktop/ofxRtMidiOut.h:
+/home/ali/Documents/Dev/of_v0.11.2_linux64gcc6_release/addons/ofxMidi/src/desktop/ofxRtMidiOut.h:
 
-/home/ali/Documents/of_v0.11.0_linux64gcc6_release/addons/ofxMidi/src/ofxMidiClock.h:
+/home/ali/Documents/Dev/of_v0.11.2_linux64gcc6_release/addons/ofxMidi/src/ofxMidiClock.h:
 
-/home/ali/Documents/of_v0.11.0_linux64gcc6_release/addons/ofxMidi/src/ofxMidiTimecode.h:
+/home/ali/Documents/Dev/of_v0.11.2_linux64gcc6_release/addons/ofxMidi/src/ofxMidiTimecode.h:
 
-/home/ali/Documents/of_v0.11.0_linux64gcc6_release/apps/myApps/MOD/src/vidLayer.h:
+/home/ali/Documents/Dev/of_v0.11.2_linux64gcc6_release/apps/myApps/MOD/src/vidLayer.h:
 
-/home/ali/Documents/of_v0.11.0_linux64gcc6_release/addons/ofxCv/src/ofxCv.h:
+/home/ali/Documents/Dev/of_v0.11.2_linux64gcc6_release/addons/ofxCv/src/ofxCv.h:
 
-/home/ali/Documents/of_v0.11.0_linux64gcc6_release/addons/ofxCv/libs/ofxCv/include/ofxCv/Utilities.h:
+/usr/include/opencv4/opencv2/opencv.hpp:
 
-/home/ali/Documents/of_v0.11.0_linux64gcc6_release/addons/ofxCv/libs/ofxCv/include/ofxCv/Wrappers.h:
+/usr/include/opencv4/opencv2/opencv_modules.hpp:
 
-/home/ali/Documents/of_v0.11.0_linux64gcc6_release/addons/ofxCv/libs/CLD/include/CLD/imatrix.h:
+/usr/include/opencv4/opencv2/core.hpp:
 
-/home/ali/Documents/of_v0.11.0_linux64gcc6_release/addons/ofxCv/libs/CLD/include/CLD/ETF.h:
+/usr/include/opencv4/opencv2/core/cvdef.h:
 
-/home/ali/Documents/of_v0.11.0_linux64gcc6_release/addons/ofxCv/libs/CLD/include/CLD/imatrix.h:
+/usr/include/opencv4/opencv2/core/hal/interface.h:
 
-/home/ali/Documents/of_v0.11.0_linux64gcc6_release/addons/ofxCv/libs/CLD/include/CLD/fdog.h:
+/usr/include/opencv4/opencv2/core/cv_cpu_dispatch.h:
 
-/home/ali/Documents/of_v0.11.0_linux64gcc6_release/addons/ofxCv/libs/CLD/include/CLD/myvec.h:
+/usr/include/opencv4/opencv2/core/version.hpp:
 
-/home/ali/Documents/of_v0.11.0_linux64gcc6_release/addons/ofxCv/libs/ofxCv/include/ofxCv/Helpers.h:
+/usr/include/opencv4/opencv2/core/base.hpp:
 
-/home/ali/Documents/of_v0.11.0_linux64gcc6_release/addons/ofxCv/libs/ofxCv/include/ofxCv/Distance.h:
+/usr/include/opencv4/opencv2/core/cvstd.hpp:
 
-/home/ali/Documents/of_v0.11.0_linux64gcc6_release/addons/ofxCv/libs/ofxCv/include/ofxCv/Calibration.h:
+/usr/include/opencv4/opencv2/core/cvstd_wrapper.hpp:
 
-/home/ali/Documents/of_v0.11.0_linux64gcc6_release/addons/ofxCv/libs/ofxCv/include/ofxCv/Tracker.h:
+/usr/include/opencv4/opencv2/core/neon_utils.hpp:
 
-/home/ali/Documents/of_v0.11.0_linux64gcc6_release/addons/ofxCv/libs/ofxCv/include/ofxCv/ContourFinder.h:
+/usr/include/opencv4/opencv2/core/vsx_utils.hpp:
 
-/home/ali/Documents/of_v0.11.0_linux64gcc6_release/addons/ofxCv/libs/ofxCv/include/ofxCv/RunningBackground.h:
+/usr/include/opencv4/opencv2/core/check.hpp:
 
-/home/ali/Documents/of_v0.11.0_linux64gcc6_release/addons/ofxCv/libs/ofxCv/include/ofxCv/Flow.h:
+/usr/include/opencv4/opencv2/core/traits.hpp:
 
-/home/ali/Documents/of_v0.11.0_linux64gcc6_release/addons/ofxCv/libs/ofxCv/include/ofxCv/ObjectFinder.h:
+/usr/include/opencv4/opencv2/core/matx.hpp:
 
-/home/ali/Documents/of_v0.11.0_linux64gcc6_release/addons/ofxCv/libs/ofxCv/include/ofxCv/Kalman.h:
+/usr/include/opencv4/opencv2/core/saturate.hpp:
 
-/home/ali/Documents/of_v0.11.0_linux64gcc6_release/apps/myApps/MOD/src/Utils.h:
+/usr/include/opencv4/opencv2/core/fast_math.hpp:
 
-/home/ali/Documents/of_v0.11.0_linux64gcc6_release/addons/ofxXmlSettings/src/ofxXmlSettings.h:
+/usr/include/opencv4/opencv2/core/types.hpp:
 
-/home/ali/Documents/of_v0.11.0_linux64gcc6_release/addons/ofxXmlSettings/libs/tinyxml.h:
+/usr/include/opencv4/opencv2/core/mat.hpp:
 
-/home/ali/Documents/of_v0.11.0_linux64gcc6_release/apps/myApps/MOD/src/ConsoleListener.h:
+/usr/include/opencv4/opencv2/core/bufferpool.hpp:
+
+/usr/include/opencv4/opencv2/core/mat.inl.hpp:
+
+/usr/include/opencv4/opencv2/core/persistence.hpp:
+
+/usr/include/opencv4/opencv2/core/operations.hpp:
+
+/usr/include/opencv4/opencv2/core/cvstd.inl.hpp:
+
+/usr/include/opencv4/opencv2/core/utility.hpp:
+
+/usr/include/opencv4/opencv2/core/optim.hpp:
+
+/usr/include/opencv4/opencv2/core/ovx.hpp:
+
+/usr/include/opencv4/opencv2/core/cvdef.h:
+
+/usr/include/opencv4/opencv2/calib3d.hpp:
+
+/usr/include/opencv4/opencv2/features2d.hpp:
+
+/usr/include/opencv4/opencv2/flann/miniflann.hpp:
+
+/usr/include/opencv4/opencv2/flann/defines.h:
+
+/usr/include/opencv4/opencv2/flann/config.h:
+
+/usr/include/opencv4/opencv2/core/affine.hpp:
+
+/usr/include/opencv4/opencv2/dnn.hpp:
+
+/usr/include/opencv4/opencv2/dnn/dnn.hpp:
+
+/usr/include/opencv4/opencv2/core/async.hpp:
+
+/usr/include/opencv4/opencv2/dnn/../dnn/version.hpp:
+
+/usr/include/opencv4/opencv2/dnn/dict.hpp:
+
+/usr/include/opencv4/opencv2/dnn/layer.hpp:
+
+/usr/include/opencv4/opencv2/dnn/dnn.inl.hpp:
+
+/usr/include/opencv4/opencv2/dnn/utils/inference_engine.hpp:
+
+/usr/include/opencv4/opencv2/dnn/utils/../dnn.hpp:
+
+/usr/include/opencv4/opencv2/flann.hpp:
+
+/usr/include/opencv4/opencv2/flann/flann_base.hpp:
+
+/usr/include/opencv4/opencv2/flann/general.h:
+
+/usr/include/opencv4/opencv2/flann/matrix.h:
+
+/usr/include/opencv4/opencv2/flann/params.h:
+
+/usr/include/opencv4/opencv2/flann/any.h:
+
+/usr/include/opencv4/opencv2/flann/defines.h:
+
+/usr/include/opencv4/opencv2/flann/saving.h:
+
+/usr/include/opencv4/opencv2/flann/nn_index.h:
+
+/usr/include/opencv4/opencv2/flann/result_set.h:
+
+/usr/include/opencv4/opencv2/flann/all_indices.h:
+
+/usr/include/opencv4/opencv2/flann/kdtree_index.h:
+
+/usr/include/opencv4/opencv2/flann/dynamic_bitset.h:
+
+/usr/include/opencv4/opencv2/flann/dist.h:
+
+/usr/include/opencv4/opencv2/flann/heap.h:
+
+/usr/include/opencv4/opencv2/flann/allocator.h:
+
+/usr/include/opencv4/opencv2/flann/random.h:
+
+/usr/include/opencv4/opencv2/flann/kdtree_single_index.h:
+
+/usr/include/opencv4/opencv2/flann/kmeans_index.h:
+
+/usr/include/opencv4/opencv2/flann/logger.h:
+
+/usr/include/opencv4/opencv2/flann/composite_index.h:
+
+/usr/include/opencv4/opencv2/flann/linear_index.h:
+
+/usr/include/opencv4/opencv2/flann/hierarchical_clustering_index.h:
+
+/usr/include/opencv4/opencv2/flann/lsh_index.h:
+
+/usr/include/opencv4/opencv2/flann/lsh_table.h:
+
+/usr/include/opencv4/opencv2/flann/autotuned_index.h:
+
+/usr/include/opencv4/opencv2/flann/ground_truth.h:
+
+/usr/include/opencv4/opencv2/flann/index_testing.h:
+
+/usr/include/opencv4/opencv2/flann/timer.h:
+
+/usr/include/opencv4/opencv2/flann/sampling.h:
+
+/usr/include/opencv4/opencv2/highgui.hpp:
+
+/usr/include/opencv4/opencv2/imgcodecs.hpp:
+
+/usr/include/opencv4/opencv2/videoio.hpp:
+
+/usr/include/opencv4/opencv2/imgproc.hpp:
+
+/usr/include/opencv4/opencv2/ml.hpp:
+
+/usr/include/opencv4/opencv2/ml/ml.inl.hpp:
+
+/usr/include/opencv4/opencv2/objdetect.hpp:
+
+/usr/include/opencv4/opencv2/objdetect/detection_based_tracker.hpp:
+
+/usr/include/opencv4/opencv2/photo.hpp:
+
+/usr/include/opencv4/opencv2/shape.hpp:
+
+/usr/include/opencv4/opencv2/shape/emdL1.hpp:
+
+/usr/include/opencv4/opencv2/shape/shape_transformer.hpp:
+
+/usr/include/opencv4/opencv2/shape/hist_cost.hpp:
+
+/usr/include/opencv4/opencv2/shape/shape_distance.hpp:
+
+/usr/include/opencv4/opencv2/stitching.hpp:
+
+/usr/include/opencv4/opencv2/stitching/warpers.hpp:
+
+/usr/include/opencv4/opencv2/stitching/detail/warpers.hpp:
+
+/usr/include/opencv4/opencv2/core/cuda.hpp:
+
+/usr/include/opencv4/opencv2/core/cuda_types.hpp:
+
+/usr/include/opencv4/opencv2/core/cuda.inl.hpp:
+
+/usr/include/opencv4/opencv2/stitching/detail/warpers_inl.hpp:
+
+/usr/include/opencv4/opencv2/stitching/detail/warpers.hpp:
+
+/usr/include/opencv4/opencv2/stitching/detail/matchers.hpp:
+
+/usr/include/opencv4/opencv2/stitching/detail/motion_estimators.hpp:
+
+/usr/include/opencv4/opencv2/stitching/detail/matchers.hpp:
+
+/usr/include/opencv4/opencv2/stitching/detail/util.hpp:
+
+/usr/include/opencv4/opencv2/stitching/detail/util_inl.hpp:
+
+/usr/include/opencv4/opencv2/stitching/detail/camera.hpp:
+
+/usr/include/opencv4/opencv2/stitching/detail/exposure_compensate.hpp:
+
+/usr/include/opencv4/opencv2/stitching/detail/seam_finders.hpp:
+
+/usr/include/opencv4/opencv2/stitching/detail/blenders.hpp:
+
+/usr/include/opencv4/opencv2/stitching/detail/camera.hpp:
+
+/usr/include/opencv4/opencv2/superres.hpp:
+
+/usr/include/opencv4/opencv2/superres/optical_flow.hpp:
+
+/usr/include/opencv4/opencv2/video.hpp:
+
+/usr/include/opencv4/opencv2/video/tracking.hpp:
+
+/usr/include/opencv4/opencv2/video/background_segm.hpp:
+
+/usr/include/opencv4/opencv2/videostab.hpp:
+
+/usr/include/opencv4/opencv2/videostab/stabilizer.hpp:
+
+/usr/include/opencv4/opencv2/videostab/global_motion.hpp:
+
+/usr/include/opencv4/opencv2/videostab/optical_flow.hpp:
+
+/usr/include/opencv4/opencv2/videostab/motion_core.hpp:
+
+/usr/include/opencv4/opencv2/videostab/outlier_rejection.hpp:
+
+/usr/include/opencv4/opencv2/videostab/motion_stabilizing.hpp:
+
+/usr/include/opencv4/opencv2/videostab/frame_source.hpp:
+
+/usr/include/opencv4/opencv2/videostab/log.hpp:
+
+/usr/include/opencv4/opencv2/videostab/inpainting.hpp:
+
+/usr/include/opencv4/opencv2/videostab/fast_marching.hpp:
+
+/usr/include/opencv4/opencv2/videostab/fast_marching_inl.hpp:
+
+/usr/include/opencv4/opencv2/videostab/deblurring.hpp:
+
+/usr/include/opencv4/opencv2/videostab/wobble_suppression.hpp:
+
+/usr/include/opencv4/opencv2/videostab/ring_buffer.hpp:
+
+/usr/include/opencv4/opencv2/viz.hpp:
+
+/usr/include/opencv4/opencv2/viz/types.hpp:
+
+/usr/include/opencv4/opencv2/viz/widgets.hpp:
+
+/usr/include/opencv4/opencv2/viz/viz3d.hpp:
+
+/usr/include/opencv4/opencv2/viz/vizcore.hpp:
+
+/home/ali/Documents/Dev/of_v0.11.2_linux64gcc6_release/addons/ofxCv/libs/ofxCv/include/ofxCv/Utilities.h:
+
+/usr/include/opencv4/opencv2/imgproc/imgproc_c.h:
+
+/usr/include/opencv4/opencv2/imgproc/types_c.h:
+
+/usr/include/opencv4/opencv2/core/core_c.h:
+
+/usr/include/opencv4/opencv2/core/types_c.h:
+
+/usr/include/opencv4/opencv2/calib3d/calib3d_c.h:
+
+/home/ali/Documents/Dev/of_v0.11.2_linux64gcc6_release/addons/ofxCv/libs/ofxCv/include/ofxCv/Wrappers.h:
+
+/home/ali/Documents/Dev/of_v0.11.2_linux64gcc6_release/addons/ofxCv/libs/CLD/include/CLD/imatrix.h:
+
+/home/ali/Documents/Dev/of_v0.11.2_linux64gcc6_release/addons/ofxCv/libs/CLD/include/CLD/ETF.h:
+
+/home/ali/Documents/Dev/of_v0.11.2_linux64gcc6_release/addons/ofxCv/libs/CLD/include/CLD/imatrix.h:
+
+/home/ali/Documents/Dev/of_v0.11.2_linux64gcc6_release/addons/ofxCv/libs/CLD/include/CLD/fdog.h:
+
+/home/ali/Documents/Dev/of_v0.11.2_linux64gcc6_release/addons/ofxCv/libs/CLD/include/CLD/myvec.h:
+
+/home/ali/Documents/Dev/of_v0.11.2_linux64gcc6_release/addons/ofxCv/libs/ofxCv/include/ofxCv/Helpers.h:
+
+/home/ali/Documents/Dev/of_v0.11.2_linux64gcc6_release/addons/ofxCv/libs/ofxCv/include/ofxCv/Distance.h:
+
+/home/ali/Documents/Dev/of_v0.11.2_linux64gcc6_release/addons/ofxCv/libs/ofxCv/include/ofxCv/Calibration.h:
+
+/home/ali/Documents/Dev/of_v0.11.2_linux64gcc6_release/addons/ofxCv/libs/ofxCv/include/ofxCv/Tracker.h:
+
+/home/ali/Documents/Dev/of_v0.11.2_linux64gcc6_release/addons/ofxCv/libs/ofxCv/include/ofxCv/ContourFinder.h:
+
+/home/ali/Documents/Dev/of_v0.11.2_linux64gcc6_release/addons/ofxCv/libs/ofxCv/include/ofxCv/RunningBackground.h:
+
+/home/ali/Documents/Dev/of_v0.11.2_linux64gcc6_release/addons/ofxCv/libs/ofxCv/include/ofxCv/Flow.h:
+
+/home/ali/Documents/Dev/of_v0.11.2_linux64gcc6_release/addons/ofxCv/libs/ofxCv/include/ofxCv/ObjectFinder.h:
+
+/home/ali/Documents/Dev/of_v0.11.2_linux64gcc6_release/addons/ofxCv/libs/ofxCv/include/ofxCv/Kalman.h:
+
+/home/ali/Documents/Dev/of_v0.11.2_linux64gcc6_release/apps/myApps/MOD/src/Utils.h:
+
+/home/ali/Documents/Dev/of_v0.11.2_linux64gcc6_release/addons/ofxXmlSettings/src/ofxXmlSettings.h:
+
+/home/ali/Documents/Dev/of_v0.11.2_linux64gcc6_release/addons/ofxXmlSettings/libs/tinyxml.h:
+
+/home/ali/Documents/Dev/of_v0.11.2_linux64gcc6_release/apps/myApps/MOD/src/ConsoleListener.h:

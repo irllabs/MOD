@@ -1,5 +1,5 @@
-obj/linux64/Release/src/ofApp.o: \
- /home/ali/Documents/Dev/of_v0.11.2_linux64gcc6_release/apps/myApps/MOD/src/ofApp.cpp \
+obj/linux64/Release/src/VidLayer.o: \
+ /home/ali/Documents/Dev/of_v0.11.2_linux64gcc6_release/apps/myApps/MOD/src/VidLayer.cpp \
  /home/ali/Documents/Dev/of_v0.11.2_linux64gcc6_release/apps/myApps/MOD/src/ofApp.h \
  ../../../libs/openFrameworks/ofMain.h \
  ../../../libs/openFrameworks/utils/ofConstants.h \

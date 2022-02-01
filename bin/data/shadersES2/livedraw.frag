@@ -16,7 +16,7 @@ void main()
     vec3 src = texture2D(tex0, texCoordVarying).rgb;
 
     // Thresholding
-    float fValue = src.r*0.29+src.g*0.6+src.b*0.11;
+    float fValue = src.r*1.29+src.g*0.6+src.b*0.11;
     float l1 = thresh - softness * 0.5;
     float l2 = l1 + softness; //thresh + softness * 0.5;
     fValue = smoothstep(max(l1,0.0), min(l2, 1.0), fValue);

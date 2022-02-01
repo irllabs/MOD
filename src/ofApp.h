@@ -2,7 +2,7 @@
 
 #include "ofMain.h"
 #include "ofxMidi.h"
-#include "vidLayer.h"
+#include "VidLayer.h"
 #include "ofxCv.h"
 //#include "ofxCvPiCam.h"
 #include "Utils.h"
@@ -125,7 +125,7 @@ class ofApp : public ofBaseApp, public ofxMidiListener {
 
 
         // Video layers
-        vector < vidLayer > vidLayers;
+        vector < VidLayer > vidLayers;
     
         // Live Camera
     

@@ -1,25 +1,26 @@
 //
 //  vidLayer.hpp
-//  VideoDelayTest
+//  VidLayer: Class for managing a single video recording/looping/processing layer
 //
 //  Created by Ali Momeni on 5/16/17.
 //
 //
 
-#ifndef vidLayer_hpp
-#define vidLayer_hpp
+#ifndef VidLayer_hpp
+#define VidLayer_hpp
 
 #include <stdio.h>
 #include "ofMain.h"
 
-class vidLayer{
+class VidLayer{
 public:
     //frames of video
     //array of textures
     //vector <ofTexture> vidFrames;
     
     //array of FBOs
-    vector <ofFbo> vidFrames2;
+    vector <ofFbo> vidFrames;
+    ofFboSettings fboSettings;
     
     //properties
     int x;
@@ -40,7 +41,6 @@ public:
     void setup(int thisID, int bufSize);
     void draw(ofTexture thisTexture);
     void update(ofTexture thisTexture);
-    void update2(ofTexture thisTexture);
     
     void setState(int thisState);
     int getState();
