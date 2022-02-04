@@ -2,6 +2,20 @@
 #include "ofApp.h"
 #include "Consts.h"
 
+#include "ofAppGLFWWindow.h"
+#include "ofEvents.h"
+
+#include "ofBaseApp.h"
+#include "ofGLRenderer.h"
+#include "ofGLProgrammableRenderer.h"
+#include "ofAppRunner.h"
+#include "ofFileUtils.h"
+#include "ofEvents.h"
+#include "ofPixels.h"
+
+//#define GLFW_INCLUDE_NONE
+//#include "GLFW/glfw3.h"
+
 
 //========================================================================
 int main( ){
@@ -20,7 +34,12 @@ int main( ){
     //     settings.setGLVersion(3,2);
     
     // #endif
-    ofSetupOpenGL(1920,1080, OF_FULLSCREEN);	
+    // int screenWidth = ofGetScreenWidth(); 
+    // int screenHeight = ofGetScreenHeight();
+
+    // ofLogNotice() << "Width:" << screenWidth << "Height:  " << screenHeight;
+    // ofSetupOpenGL(1920,1080, OF_FULLSCREEN);	
+    ofSetupOpenGL(640,480, OF_WINDOW);	
 
 	// this kicks off the running of my app
 	// can be OF_WINDOW or OF_FULLSCREEN

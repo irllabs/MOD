@@ -19,7 +19,7 @@ void VidLayer::setup(int thisID, int bufSize){
     vidFrames.resize(bufSize);
     
     myID = thisID;
-    state = 0;                //stop all playheads
+    state = 0;                //0 = stop, 1 = record, 2 = play; stop all playheads
     playHead = 0;             //set all playheads to 0
     playDir = 1;              // 1 for forward, -1 for reverse
     recHead = 0;              //set all playheads to 0
@@ -123,7 +123,6 @@ void VidLayer::update(ofTexture theTexture){
         vidFrames[recHead].begin();
         theTexture.draw(0,0);
         vidFrames[recHead].end();
-        
         
         //advance record head
         recHead = (recHead + 1 ) % recMax;

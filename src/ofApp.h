@@ -103,9 +103,10 @@ class ofApp : public ofBaseApp, public ofxMidiListener {
         int counter;
 
         // for GStreamer video capture
+        # ifdef TARGET_LINUX_ARM
         ofGstVideoUtils gst;
         ofTexture gsttex;
-
+        #endif
     
         // for MIDI
         void newMidiMessage(ofxMidiMessage& eventArgs);
@@ -145,11 +146,17 @@ class ofApp : public ofBaseApp, public ofxMidiListener {
         //     ofxCvPiCam videoGrabber2;
 
     
-        // #elif defined(TARGET_OSX)
+        # ifdef TARGET_OSX
         
         ofVideoGrabber videoGrabber;
     
-        //#endif
+        # endif
+
+        # ifdef TARGET_LINUX
+
+        ofVideoGrabber videoGrabber;
+
+        # endif
 
     
         //XML settings related
