@@ -14,6 +14,9 @@ float camInvert;
 float camOpacity;
 int camShaderActive;
 
+int shaderMaskNumber;
+int shaderMaskCount;
+
 int CAM_DEV_ID;
 int CAM_W;
 int CAM_H;
@@ -53,6 +56,7 @@ void ofApp::setup(){
     //--XML-settings-----------------------
     //-------------------------------------
     //read all initial values into extern variables from XML settings file
+    
     ofLog(OF_LOG_NOTICE,"--------Reading XML file for initialization--------");
     XML.loadFile("mySettings.xml");
  
@@ -91,8 +95,20 @@ void ofApp::setup(){
     //-------------------------------------
 
     ofSetFrameRate(CAM_FPS);
+
+
     ofLog(OF_LOG_NOTICE,"--------setting up shaders--------");
     // setup Shader
+
+    ofDirectory masksDir("masks");
+    //populate the directory object
+    masksDir.listDir();
+    masksDir.allowExt("png");
+    shaderMaskCount = masksDir.size();
+    //go through and print out all the paths
+    for(int i = 0; i < shaderMaskCount; i++){
+        ofLogNotice(masksDir.getPath(i));
+    }
 
     #ifdef TARGET_OPENGLES
         camShader.load("shadersES2/livedraw");
@@ -103,10 +119,16 @@ void ofApp::setup(){
             camShader.load("shadersGL2/livedraw");
         }
     #endif
-    
-    camShaderMask.load("img_mask_1080c.png");
-    camShaderMask.resize(CAM_W,CAM_H);
-    camShaderMaskTex = camShaderMask.getTexture();
+    shaderMaskNumber = 0;
+    camShaderMasks.resize(shaderMaskCount);
+    for(int i = 0; i < shaderMaskCount; i++){
+        camShaderMasks[i].load(masksDir.getPath(i));
+        camShaderMasks[i].resize(CAM_W,CAM_H);
+    }
+
+    // camShaderMasks.load("img_mask_1080c.png");
+    // camShaderMask.resize(CAM_W,CAM_H);
+    camShaderMaskTex = camShaderMasks[shaderMaskNumber].getTexture();
     camThresh = SHADER_THRESH;
     camSoftness = SHADER_SOFT;
     camInvert = SHADER_INVERT;
@@ -234,7 +256,7 @@ void ofApp::draw(){
         //ofLog(OF_LOG_NOTICE, "---------drawing up with Shader");
 
         camShader.begin();
-        camShader.setUniformTexture("maskTex", camShaderMask.getTexture(), 1);
+        camShader.setUniformTexture("maskTex", camShaderMasks[shaderMaskNumber].getTexture(), 1);
         camShader.setUniform1f("thresh", camThresh);
         camShader.setUniform1f("softness", camSoftness);
         camShader.setUniform1f("invert", camInvert);

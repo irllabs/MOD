@@ -43,6 +43,10 @@ void MidiProcessor::setup(){
     MIDI_SHADER_CAM_SOFT = XML.getValue("MIDI_SHADER_CAM_SOFT", 0);
     MIDI_SHADER_CAM_INVERT_ON = XML.getValue("MIDI_SHADER_CAM_INVERT_ON", 0);
     MIDI_SHADER_CAM_INVERT_OFF = XML.getValue("MIDI_SHADER_CAM_INVERT_OFF", 0);
+
+
+    MIDI_MASK_NEXT = XML.getValue("MIDI_MASK_NEXT", 0);
+    MIDI_MASK_PREV = XML.getValue("MIDI_MASK_PREV", 0);
     
     // ofLog(OF_LOG_NOTICE,"MIDI_SHADER_CAM_OPACITY: " + ofToString(MIDI_SHADER_CAM_OPACITY));
 
@@ -170,6 +174,14 @@ void MidiProcessor::newMidiMessage(ofxMidiMessage& msg){
         
         if (midiMessage.control ==MIDI_SHADER_CAM_THRESH ) {
             camThresh = Utils::scale(midiMessage.value,0,127,0., 1.);
+        }
+
+        if (midiMessage.control == MIDI_MASK_NEXT  && midiMessage.value == 127) {
+            shaderMaskNumber = (shaderMaskNumber + 1 ) % shaderMaskCount;
+        }
+
+        if (midiMessage.control == MIDI_MASK_PREV && midiMessage.value == 127) {
+            shaderMaskNumber = (shaderMaskNumber - 1  + shaderMaskCount ) % shaderMaskCount;
         }
         
         // if (midiMessage.control ==MIDI_SHADER_CAM_SOFT ) {

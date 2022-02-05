@@ -43,6 +43,8 @@ public:
     int MIDI_SHADER_CAM_SOFT;
     int MIDI_SHADER_CAM_INVERT_ON;
     int MIDI_SHADER_CAM_INVERT_OFF;
+    int MIDI_MASK_NEXT;
+    int MIDI_MASK_PREV;
 
     //XML settings related
     ofxXmlSettings XML;
