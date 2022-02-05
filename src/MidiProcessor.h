@@ -45,6 +45,11 @@ public:
     int MIDI_SHADER_CAM_INVERT_OFF;
     int MIDI_MASK_NEXT;
     int MIDI_MASK_PREV;
+    int MIDI_SHADER_SOFTNESS_MODIFIER;
+    int MIDI_SHADER_THRESH_MODIFIER;
+
+    //state variables
+    int knobMode;  //0 (default) = knob for shader threshold, 1 = knob for shader smoothing
 
     //XML settings related
     ofxXmlSettings XML;

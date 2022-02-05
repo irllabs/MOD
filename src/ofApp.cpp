@@ -16,6 +16,8 @@ int camShaderActive;
 
 int shaderMaskNumber;
 int shaderMaskCount;
+vector <ofImage> shaderMasks;
+
 
 int CAM_DEV_ID;
 int CAM_W;
@@ -120,15 +122,15 @@ void ofApp::setup(){
         }
     #endif
     shaderMaskNumber = 0;
-    camShaderMasks.resize(shaderMaskCount);
+    shaderMasks.resize(shaderMaskCount);
     for(int i = 0; i < shaderMaskCount; i++){
-        camShaderMasks[i].load(masksDir.getPath(i));
-        camShaderMasks[i].resize(CAM_W,CAM_H);
+        shaderMasks[i].load(masksDir.getPath(i));
+        shaderMasks[i].resize(CAM_W,CAM_H);
     }
 
-    // camShaderMasks.load("img_mask_1080c.png");
+    // shaderMasks.load("img_mask_1080c.png");
     // camShaderMask.resize(CAM_W,CAM_H);
-    camShaderMaskTex = camShaderMasks[shaderMaskNumber].getTexture();
+    camShaderMaskTex = shaderMasks[shaderMaskNumber].getTexture();
     camThresh = SHADER_THRESH;
     camSoftness = SHADER_SOFT;
     camInvert = SHADER_INVERT;
@@ -256,7 +258,7 @@ void ofApp::draw(){
         //ofLog(OF_LOG_NOTICE, "---------drawing up with Shader");
 
         camShader.begin();
-        camShader.setUniformTexture("maskTex", camShaderMasks[shaderMaskNumber].getTexture(), 1);
+        camShader.setUniformTexture("maskTex", shaderMasks[shaderMaskNumber].getTexture(), 1);
         camShader.setUniform1f("thresh", camThresh);
         camShader.setUniform1f("softness", camSoftness);
         camShader.setUniform1f("invert", camInvert);

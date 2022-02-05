@@ -61,6 +61,8 @@ extern int SHADER_ACTIVE;
 
 extern int shaderMaskNumber;
 extern int shaderMaskCount;
+extern vector <ofImage> shaderMasks;
+
 
 // Video layers
 extern vector < VidLayer > vidLayers;
@@ -112,7 +114,6 @@ class ofApp : public ofBaseApp {
         // for shader params
         ofShader camShader;
 
-        vector <ofImage> camShaderMasks;
         ofTexture camShaderMaskTex;
 
         float camShaderActive;

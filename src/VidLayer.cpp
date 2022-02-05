@@ -59,9 +59,7 @@ void VidLayer::setup(int thisID, int bufSize){
             shader.load("shadersGL2/livedraw");
         }
     #endif
-    
-    imageMask.load("img_mask_1080c.png");
-    imageMask.resize(CAM_W,CAM_H);
+
     
 
 }
@@ -73,7 +71,7 @@ void VidLayer::draw(ofTexture thisTexture){
         
         if (shaderActive == 1) {
             shader.begin();
-            shader.setUniformTexture("maskTex", imageMask.getTexture(), 1);
+            shader.setUniformTexture("maskTex", shaderMasks[shaderMaskNumber].getTexture(), 1);
             shader.setUniform1f("thresh", thresh);
             shader.setUniform1f("softness", softness);
             shader.setUniform1f("invert", invert);
@@ -96,7 +94,7 @@ void VidLayer::draw(ofTexture thisTexture){
              livefeed.setAnchorPercent(0.5, 0.5);
          if (shaderActive == 1) {
              shader.begin();
-             shader.setUniformTexture("maskTex", imageMask.getTexture(), 1);
+             shader.setUniformTexture("maskTex", shaderMasks[shaderMaskNumber].getTexture(), 1);
              shader.setUniform1f("thresh", thresh);
              shader.setUniform1f("softness", softness);
              shader.setUniform1f("invert", invert);
@@ -155,9 +153,7 @@ void VidLayer::setState(int thisState){
                 thresh = camThresh;
                 softness = camSoftness;
                 invert = camInvert;
-                
-                
-                
+
                 //ofLog(OF_LOG_NOTICE, "RECORD: State for layer " + ofToString(myID) + " is " + ofToString(state));
                 //ofLog(OF_LOG_NOTICE, "Starting recording on layer " + ofToString(myID));
                 state=1;            //set state to 1
@@ -208,6 +204,10 @@ void VidLayer::setOpacity(float thisOpacity){
 
 void VidLayer::setThresh(float thisThresh){
     thresh =thisThresh;
+}
+
+void VidLayer::setSoftness(float thisSoftness){
+    softness =thisSoftness;
 }
 
 void VidLayer::setInvert(float thisInvert){

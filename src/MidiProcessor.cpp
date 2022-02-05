@@ -43,6 +43,8 @@ void MidiProcessor::setup(){
     MIDI_SHADER_CAM_SOFT = XML.getValue("MIDI_SHADER_CAM_SOFT", 0);
     MIDI_SHADER_CAM_INVERT_ON = XML.getValue("MIDI_SHADER_CAM_INVERT_ON", 0);
     MIDI_SHADER_CAM_INVERT_OFF = XML.getValue("MIDI_SHADER_CAM_INVERT_OFF", 0);
+    MIDI_SHADER_SOFTNESS_MODIFIER = XML.getValue("MIDI_SHADER_SOFTNESS_MODIFIER", 0);
+    MIDI_SHADER_THRESH_MODIFIER = XML.getValue("MIDI_SHADER_THRESH_MODIFIER", 0);
 
 
     MIDI_MASK_NEXT = XML.getValue("MIDI_MASK_NEXT", 0);
@@ -59,6 +61,7 @@ void MidiProcessor::setup(){
     midiIn.addListener(this);
     midiIn.setVerbose(true);
 
+    knobMode = 0;
 }
 
 void MidiProcessor::draw(ofxMidiMessage& msg){
@@ -125,11 +128,27 @@ void MidiProcessor::newMidiMessage(ofxMidiMessage& msg){
         if (midiMessage.control >=MIDI_SHADER_THRESH && midiMessage.control <=(MIDI_SHADER_THRESH+LAYER_COUNT) ) {
             layNum = midiMessage.control - MIDI_SHADER_THRESH;
             float scaleVal = 1.;
-            scaleVal = Utils::scale(midiMessage.value,0,127,0,1);            
-            vidLayers[layNum].setThresh(scaleVal);
+            if (knobMode == 0) {
+                scaleVal = Utils::scale(midiMessage.value,0,127,0,1);            
+                vidLayers[layNum].setThresh(scaleVal);
+            } else {
+                scaleVal = Utils::scale(midiMessage.value,0,127,0.0001,0.3);            
+                vidLayers[layNum].setSoftness(scaleVal);
+            }
         }
 
         //smoothing message modifier key
+
+
+        if (midiMessage.control == MIDI_SHADER_THRESH_MODIFIER  && midiMessage.value == 127) {
+            ofLog(OF_LOG_NOTICE, "Setting Knob Mode to 0" );
+            knobMode = 0;
+        }
+
+        if (midiMessage.control == MIDI_SHADER_SOFTNESS_MODIFIER  && midiMessage.value == 127) {
+            ofLog(OF_LOG_NOTICE, "Setting Knob Mode to 1" );
+            knobMode = 1;
+        }
 
 
 
@@ -166,14 +185,17 @@ void MidiProcessor::newMidiMessage(ofxMidiMessage& msg){
         
         if (midiMessage.control == MIDI_SHADER_CAM_OPACITY ) {
             float scaleVal = Utils::scale(midiMessage.value,0,127,0., 1.);
-
             ofLog(OF_LOG_NOTICE, "Setting camopacity to " + ofToString(scaleVal));
-
             camOpacity = scaleVal;
         }
         
         if (midiMessage.control ==MIDI_SHADER_CAM_THRESH ) {
-            camThresh = Utils::scale(midiMessage.value,0,127,0., 1.);
+            if (knobMode == 0) {
+                camThresh = Utils::scale(midiMessage.value,0,127,0., 1.);
+            } else {
+                camSoftness = Utils::scale(midiMessage.value,0,127,0.0001,0.3);            
+            }
+                
         }
 
         if (midiMessage.control == MIDI_MASK_NEXT  && midiMessage.value == 127) {
