@@ -78,7 +78,9 @@ void VidLayer::draw(ofTexture thisTexture){
             shader.setUniform1f("softness", softness);
             shader.setUniform1f("invert", invert);
             shader.setUniform1f("opacity", opacity);
-            vidFrames[playHead].draw(x, y , CAM_W * scale * VID_SCALE, CAM_H * scale * VID_SCALE);
+
+            vidFrames[playHead].getTexture().draw(x, y , CAM_W * scale * VID_SCALE, CAM_H * scale * VID_SCALE);
+            //vidFrames[playHead].draw(x, y , CAM_W * scale * VID_SCALE, CAM_H * scale * VID_SCALE);
      
             shader.end();
         } else {
@@ -98,7 +100,7 @@ void VidLayer::draw(ofTexture thisTexture){
              shader.setUniform1f("thresh", thresh);
              shader.setUniform1f("softness", softness);
              shader.setUniform1f("invert", invert);
-             
+             shader.setUniform1f("opacity", opacity);
              livefeed.draw(x, y, CAM_W * scale * VID_SCALE, CAM_H * scale * VID_SCALE);
              shader.end();
          } else {
@@ -200,6 +202,7 @@ void VidLayer::setScale(float thisScale){
 }
 
 void VidLayer::setOpacity(float thisOpacity){
+    // ofLog(OF_LOG_NOTICE, "VidLayer: Setting opacity for layer " + ofToString(myID)  + " to " + ofToString(thisOpacity));
     opacity =thisOpacity;
 }
 

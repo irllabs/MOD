@@ -8,6 +8,7 @@
 #include "Utils.h"
 #include "ofxXmlSettings.h"
 #include "ConsoleListener.h"
+#include "MidiProcessor.h"
 
 //for Raspberry Pi
 
@@ -49,19 +50,6 @@ extern int MIDI_SCALE;
 extern int MIDI_XPOS;
 extern int MIDI_YPOS;
 
-extern int MIDI_SHADER_BYPASS;
-extern int MIDI_SHADER_THRESH;
-extern int MIDI_SHADER_SOFT;
-extern int MIDI_SHADER_INVERT_ON;
-extern int MIDI_SHADER_INVERT_OFF;
-extern int MIDI_SHADER_OPACITY;
-extern int MIDI_SHADER_CAM_OPACITY;
-extern int MIDI_SHADER_CAM_THRESH;
-extern int MIDI_SHADER_CAM_SOFT;
-extern int MIDI_SHADER_CAM_INVERT_ON;
-extern int MIDI_SHADER_CAM_INVERT_OFF;
-
-
 
 //default layer settings
 extern float LAYER_SCALE;
@@ -72,17 +60,21 @@ extern float SHADER_OPACITY;
 extern int SHADER_ACTIVE;
 //extern string SHADER_MASK;
 
+// Video layers
+extern vector < VidLayer > vidLayers;
+
+
 extern int USE_OFXCVPI;
 
 
-class ofApp : public ofBaseApp, public ofxMidiListener {
+class ofApp : public ofBaseApp {
 
 	public:
 
 		void setup();
 		void update();
         void draw();
-        void drawMIDI();
+        //void drawMIDI();
         void exit();
 
 		void keyPressed(int key);
@@ -109,13 +101,11 @@ class ofApp : public ofBaseApp, public ofxMidiListener {
         #endif
     
         // for MIDI
-        void newMidiMessage(ofxMidiMessage& eventArgs);
-        
-        stringstream text;
-        
-        ofxMidiIn midiIn;
-        ofxMidiMessage midiMessage;
-    
+        // void newMidiMessage(ofxMidiMessage& eventArgs);
+        // stringstream text;
+        // ofxMidiIn midiIn;
+        // ofxMidiMessage midiMessage;
+        MidiProcessor midiProcessor;
 
         // for shader params
         ofShader camShader;
@@ -123,14 +113,14 @@ class ofApp : public ofBaseApp, public ofxMidiListener {
         ofTexture camShaderMaskTex;
 
         float camShaderActive;
+        
 
 
-        // Video layers
-        vector < VidLayer > vidLayers;
+        // // Video layers
+        // vector < VidLayer > vidLayers;
     
         // Live Camera
     
-        
         // #ifdef TARGET_LINUX_ARM
     
         //     /*
@@ -147,15 +137,11 @@ class ofApp : public ofBaseApp, public ofxMidiListener {
 
     
         # ifdef TARGET_OSX
-        
         ofVideoGrabber videoGrabber;
-    
         # endif
 
         # ifdef TARGET_LINUX
-
         ofVideoGrabber videoGrabber;
-
         # endif
 
     

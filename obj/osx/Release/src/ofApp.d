@@ -900,7 +900,8 @@ obj/osx/Release/src/ofApp.o: \
   /Users/ali/Documents/Dev/of_v0.11.2_osx_release/apps/myApps/MOD/src/Utils.h \
   /Users/ali/Documents/Dev/of_v0.11.2_osx_release/addons/ofxXmlSettings/src/ofxXmlSettings.h \
   /Users/ali/Documents/Dev/of_v0.11.2_osx_release/addons/ofxXmlSettings/libs/tinyxml.h \
-  /Users/ali/Documents/Dev/of_v0.11.2_osx_release/apps/myApps/MOD/src/ConsoleListener.h
+  /Users/ali/Documents/Dev/of_v0.11.2_osx_release/apps/myApps/MOD/src/ConsoleListener.h \
+  /Users/ali/Documents/Dev/of_v0.11.2_osx_release/apps/myApps/MOD/src/MidiProcessor.h
 
 /Users/ali/Documents/Dev/of_v0.11.2_osx_release/apps/myApps/MOD/src/ofApp.h:
 
@@ -2703,3 +2704,5 @@ obj/osx/Release/src/ofApp.o: \
 /Users/ali/Documents/Dev/of_v0.11.2_osx_release/addons/ofxXmlSettings/libs/tinyxml.h:
 
 /Users/ali/Documents/Dev/of_v0.11.2_osx_release/apps/myApps/MOD/src/ConsoleListener.h:
+
+/Users/ali/Documents/Dev/of_v0.11.2_osx_release/apps/myApps/MOD/src/MidiProcessor.h:
